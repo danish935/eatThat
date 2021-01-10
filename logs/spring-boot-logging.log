@@ -1,0 +1,15 @@
+2021-01-10 19:07:16.915  INFO 31132 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 31132 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
+2021-01-10 19:07:16.926  INFO 31132 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
+2021-01-10 19:07:16.971  INFO 31132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-10 19:07:16.971  INFO 31132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-10 19:07:18.259  INFO 31132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
+2021-01-10 19:07:18.268  INFO 31132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-10 19:07:18.268  INFO 31132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-10 19:07:18.345  INFO 31132 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
+2021-01-10 19:07:18.345  INFO 31132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1374 ms
+2021-01-10 19:07:19.295  WARN 31132 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-10 19:07:19.442  INFO 31132 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-10 19:07:19.493  INFO 31132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-10 19:07:19.530  INFO 31132 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-01-10 19:07:19.853  INFO 31132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path '/app/api'
+2021-01-10 19:07:20.260  INFO 31132 --- [restartedMain] c.e.application.EatThatApplication       : Started EatThatApplication in 3.728 seconds (JVM running for 4.615)
