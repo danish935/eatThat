@@ -3,6 +3,8 @@
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+**/logs/
+spring-boot-logging.log
 
 # Ignore Gradle GUI config
 gradle-app.setting
