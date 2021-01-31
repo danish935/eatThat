@@ -36,7 +36,7 @@ public interface DietPlanMapper {
 	@Select("select * from diet_categories")
 	public ArrayList<FoodCategories> getCategories();
 	
-	@Select("select * from diet_plans")
+	@Select("select id as dietId, plan_name from diet_plans")
 	public ArrayList<DietPlans> getDietPlans();
 
 	@Insert("insert into diet_plans(plan_name) values(#{planName})")

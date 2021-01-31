@@ -61,13 +61,13 @@ public class AccountController {
 		if (usr !=null)
 		{
 			response.setStatus("00");
-			response.setMessage("true");
+			response.setMessage("Login Successfully");
 			response.setData(usr);
 		}
 		else
 		{
 			response.setStatus("01");
-			response.setMessage("false");
+			response.setMessage("Invalid username/password");
 			response.setData(new User());
 		}
 		return response;
@@ -83,13 +83,13 @@ public class AccountController {
 		if (updated)
 		{
 			response.setStatus("00");
-			response.setMessage("true");
+			response.setMessage("Password updated successfully");
 			response.setData();
 		}
 		else
 		{
 			response.setStatus("01");
-			response.setMessage("false");
+			response.setMessage("Please try again later");
 			response.setData();
 		}
 		return response;
