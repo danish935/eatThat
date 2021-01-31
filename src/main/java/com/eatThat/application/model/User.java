@@ -13,6 +13,15 @@ public class User {
 	Date createDate;
 	Date modifiedDate;
 	String dietPlan;
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	int id;
 	
 	public String getDietPlan() {
 		return dietPlan;

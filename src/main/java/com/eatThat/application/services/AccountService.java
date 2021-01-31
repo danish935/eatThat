@@ -4,7 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.eatThat.application.dao.UserDao;
+import com.eatThat.application.model.AccountInfo;
 import com.eatThat.application.model.User;
+import com.eatThat.application.util.EmailUtil;
 
 @Service("account")
 public class AccountService {
@@ -12,13 +14,16 @@ public class AccountService {
 	@Autowired
 	UserDao UserDao;
 	
+	@Autowired
+	EmailUtil emailUtil;
+	
 	public User registerUser(User usr)
 	{
 		
 		if(UserDao.getUserbyEmail(usr.getEmail()) == null)
 		{
-			int id = UserDao.insertUser(usr);		
-			return UserDao.getUser(id);
+			int id = UserDao.insertUser(usr);	
+			return UserDao.getUser(usr.getId());
 		}
 		else
 		{
@@ -36,9 +41,35 @@ public class AccountService {
 		return null;
 	}
 
-	public Boolean changePassword(User user) {
+	public AccountInfo changePassword(User user, boolean forgotPasswordFlow) {
 		// TODO Auto-generated method stub
-		return UserDao.changePassword(user);
+		
+		if(UserDao.getUserbyEmail(user.getEmail()) != null)
+		{
+			int randomPassword = 0;
+			if (forgotPasswordFlow)
+			{
+				randomPassword = (int)(Math.random()*100);
+				user.setPassword(Integer.toString(randomPassword));
+				emailUtil.sendForgotPasswordEmail(user);
+
+			}
+		}
+		else
+		{
+			return AccountInfo.USERNOTEXISTS;
+		}
+			
+		
+		if (UserDao.changePassword(user))
+			{
+			return AccountInfo.SUCCESS;
+			}
+		else
+		{
+			return AccountInfo.RETRY;
+
+		}
 	}
 
 }

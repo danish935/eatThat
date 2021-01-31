@@ -9,9 +9,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.eatThat.application.model.AccountInfo;
 import com.eatThat.application.model.Response;
 import com.eatThat.application.model.User;
 import com.eatThat.application.services.AccountService;
+import com.eatThat.application.util.EmailUtil;
 
 @RestController
 @RequestMapping("/account")
@@ -23,7 +25,10 @@ public class AccountController {
 	AccountService accountService;
     private static final Logger logger = LoggerFactory.getLogger(AccountController.class);
     
+    
 	Response<T> response = new Response<T>();
+	@Autowired
+	EmailUtil emailUtil;
 
 
 	@RequestMapping(method = RequestMethod.GET)
@@ -40,6 +45,7 @@ public class AccountController {
 			response.setData(temp);
 			response.setStatus("00");
 			response.setMessage("User Register Successfully");
+			emailUtil.sendRegistrationEmail(temp);
 		}
 		else{
 			response.setData(new User());
@@ -77,18 +83,55 @@ public class AccountController {
 	//public Response<T> login(@RequestParam String email, @RequestParam String password) {
 		
 		public Response<T> changePassword(@RequestBody User user) {
+		
+		boolean  forgotPasswordFlow = false;
 
-		boolean updated = accountService.changePassword(user);
+	 AccountInfo info = accountService.changePassword(user, forgotPasswordFlow);
 	
-		if (updated)
+		if (info == AccountInfo.SUCCESS)
 		{
 			response.setStatus("00");
-			response.setMessage("Password updated successfully");
+			response.setMessage("Password Changed sucessfully");
 			response.setData();
 		}
-		else
+		else if(info == AccountInfo.USERNOTEXISTS)
 		{
 			response.setStatus("01");
+			response.setMessage("User not exists");
+			response.setData();
+		}
+		else if(info == AccountInfo.RETRY)
+		{
+			response.setStatus("02");
+			response.setMessage("Please try again later");
+			response.setData();
+		}
+		return response;
+	}
+	
+	@RequestMapping(method = RequestMethod.POST, path = "/forgotPassword", consumes = "application/json")
+	//public Response<T> login(@RequestParam String email, @RequestParam String password) {
+		
+		public Response<T> forgotPassword(@RequestBody User user) {
+		boolean  forgotPasswordFlow = true;
+		
+		AccountInfo info = accountService.changePassword(user, forgotPasswordFlow);
+	
+		if (info == AccountInfo.SUCCESS)
+		{
+			response.setStatus("00");
+			response.setMessage("Please find details in eamil to proceed further.");
+			response.setData();
+		}
+		else if(info == AccountInfo.USERNOTEXISTS)
+		{
+			response.setStatus("01");
+			response.setMessage("User not exists");
+			response.setData();
+		}
+		else if(info == AccountInfo.RETRY)
+		{
+			response.setStatus("02");
 			response.setMessage("Please try again later");
 			response.setData();
 		}
