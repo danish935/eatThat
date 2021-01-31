@@ -49,7 +49,7 @@ public class AccountService {
 			int randomPassword = 0;
 			if (forgotPasswordFlow)
 			{
-				randomPassword = (int)(Math.random()*100);
+				randomPassword = (int)(Math.random()*100000);
 				user.setPassword(Integer.toString(randomPassword));
 				emailUtil.sendForgotPasswordEmail(user);
 

@@ -35,13 +35,13 @@ public class DietPlanController {
 		
 		ArrayList<FoodItem> items = (ArrayList<FoodItem>) dietPlanService.getAllItems(foodItems);
 		
-		if (items.size() > 0)
-		{
+	//	if (items.size() > 0)
+		//{
 			response.setData(items);
 			response.setMessage("succes");
 			response.setStatus("00");
 			
-		}
+//		}
 		return response;
 	}
 	
