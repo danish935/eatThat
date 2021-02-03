@@ -39,4 +39,9 @@ public class UserDao {
 	public boolean activateAccount(User user) {
 		return mapper.activateAccount(user);
 	}
+
+	public Boolean updatePlan(User user) {
+		return mapper.updatePlan(user);
+
+	}
 }

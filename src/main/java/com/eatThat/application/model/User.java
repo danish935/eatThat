@@ -15,7 +15,7 @@ public class User {
 	String registrationOtp;
 	Date createDate;
 	Date modifiedDate;
-	String dietPlan;
+	int dietPlanId = 1;
 	public int getId() {
 		return id;
 	}
@@ -26,12 +26,12 @@ public class User {
 
 	int id;
 	
-	public String getDietPlan() {
-		return dietPlan;
+	public int getDietPlanId() {
+		return dietPlanId;
 	}
 
-	public void setDietPlan(String dietPlan) {
-		this.dietPlan = dietPlan;
+	public void setDietPlanId(int dietPlan) {
+		this.dietPlanId = dietPlan;
 	}
 
 	public int getActive() {

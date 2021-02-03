@@ -106,4 +106,18 @@ public class AccountService {
 		return AccountInfo.OTPVERIFIEDFAIL;
 	}
 
+	public AccountInfo updatePlan(User user) {
+		User temp = UserDao.getUserbyEmail(user.getEmail());
+		if(temp != null)
+		{
+				UserDao.updatePlan(user);
+				return AccountInfo.PLANUPDATED;
+		}
+		else
+		{
+			return AccountInfo.USERNOTEXISTS;
+		}
+		
+	}
+
 }

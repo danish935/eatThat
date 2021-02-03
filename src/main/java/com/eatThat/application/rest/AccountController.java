@@ -165,5 +165,27 @@ public class AccountController {
 		
 		return response;
 	}
+	
+	
+	@RequestMapping(method = RequestMethod.POST, path = "/updatePlan", consumes = "application/json")
+	public Response<T> updatePlan(@RequestBody User user) {
+	
+	AccountInfo info = accountService.updatePlan(user);
+
+	if (info == AccountInfo.PLANUPDATED)
+	{
+		response.setStatus("00");
+		response.setMessage("Diet Plan updated successfully.");
+		response.setData();
+	}
+	else
+	{
+		response.setStatus("01");
+		response.setMessage("Plan updation failed");
+		response.setData();
+	}
+	
+	return response;
+}
 
 }

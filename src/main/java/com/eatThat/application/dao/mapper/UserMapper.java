@@ -11,7 +11,7 @@ import com.eatThat.application.model.User;
 @Mapper
 public interface UserMapper {
 
-	@Insert("insert into users(first_name,last_name,email,password,active,registration_otp,create_date,modified_date,deleted,diet_plan) values(#{firstName},#{lastName}, #{email},#{password},#{active},#{registrationOtp},#{createDate},#{modifiedDate},#{deleted},#{dietPlan})")
+	@Insert("insert into users(first_name,last_name,email,password,active,registration_otp,create_date,modified_date,deleted,diet_plan_id) values(#{firstName},#{lastName}, #{email},#{password},#{active},#{registrationOtp},#{createDate},#{modifiedDate},#{deleted},#{dietPlanId})")
 	@Options(useGeneratedKeys = true,keyProperty = "id",keyColumn="id")
 	public int insertUser(User user);
 
@@ -29,4 +29,7 @@ public interface UserMapper {
 
 	@Update("update users set active=1 where email=#{email}")
 	public boolean activateAccount(User user);
+	
+	@Update("update users set diet_plan_id=#{dietPlanId} where email=#{email}")
+	public Boolean updatePlan(User user);
 }
