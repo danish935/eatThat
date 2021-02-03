@@ -2,14 +2,17 @@ package com.eatThat.application.model;
 
 import java.sql.Date;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class User {
 	String firstName;
 	String lastName;
 	String email;
 	String password;
-	Boolean deleted = false;
-	Boolean active = true;
-	Boolean emailVerified = true;
+	int deleted;
+	int active;
+	String registrationOtp;
 	Date createDate;
 	Date modifiedDate;
 	String dietPlan;
@@ -31,20 +34,22 @@ public class User {
 		this.dietPlan = dietPlan;
 	}
 
-	public Boolean getActive() {
+	public int getActive() {
 		return active;
 	}
 
-	public void setActive(Boolean active) {
+	public void setActive(int active) {
 		this.active = active;
 	}
 
-	public Boolean getEmailVerified() {
-		return emailVerified;
+	public String getRegistrationOtp() {
+		return registrationOtp;
 	}
 
-	public void setEmailVerified(Boolean emailVerified) {
-		this.emailVerified = emailVerified;
+	@JsonIgnore
+	@JsonProperty(value = "registrationOtp")
+	public void setRegistrationOtp(String registrationOtp) {
+		this.registrationOtp = registrationOtp;
 	}
 
 	public String getFirstName() {
@@ -63,11 +68,11 @@ public class User {
 		this.lastName = lastName;
 	}
 
-	public Boolean getDeleted() {
+	public int getDeleted() {
 		return deleted;
 	}
 
-	public void setDeleted(Boolean deleted) {
+	public void setDeleted(int deleted) {
 		this.deleted = deleted;
 	}
 
@@ -95,6 +100,8 @@ public class User {
 		this.email = email;
 	}
 
+	@JsonIgnore
+	@JsonProperty(value = "password")
 	public String getPassword() {
 		return password;
 	}

@@ -19,9 +19,14 @@ public class AccountService {
 	
 	public User registerUser(User usr)
 	{
+		int registrationotp = 0;
 		
-		if(UserDao.getUserbyEmail(usr.getEmail()) == null)
+		User temp = UserDao.getUserbyEmail(usr.getEmail());
+		
+		if(temp == null)
 		{
+			registrationotp = (int)(Math.random()*1000000);
+			usr.setRegistrationOtp(Integer.toString(registrationotp));
 			int id = UserDao.insertUser(usr);	
 			return UserDao.getUser(usr.getId());
 		}
@@ -31,14 +36,22 @@ public class AccountService {
 		}
 	}
 
-	public User login(User user) {
-		// TODO Auto-generated method stub
-		return UserDao.login(user);
+	public AccountInfo login(User user) {
+	
+		User usr =  UserDao.login(user);
+		
+		if (usr == null)
+			return AccountInfo.INVALIDLOGIN;
+		else if (usr.getActive() == 0)
+			return AccountInfo.INACTIVE;
+		else if (usr != null && usr.getActive() == 1)
+			return AccountInfo.SUCCESS;
+		
+		return AccountInfo.INVALIDLOGIN;
 	}
 
-	public User getUser(int userId) {
-		// TODO Auto-generated method stub
-		return null;
+	public User getUser(User user) {
+		return UserDao.login(user);
 	}
 
 	public AccountInfo changePassword(User user, boolean forgotPasswordFlow) {
@@ -49,8 +62,9 @@ public class AccountService {
 			int randomPassword = 0;
 			if (forgotPasswordFlow)
 			{
-				randomPassword = (int)(Math.random()*100000);
+				randomPassword = (int)(Math.random()*1000000);
 				user.setPassword(Integer.toString(randomPassword));
+				UserDao.changePassword(user);
 				emailUtil.sendForgotPasswordEmail(user);
 
 			}
@@ -70,6 +84,26 @@ public class AccountService {
 			return AccountInfo.RETRY;
 
 		}
+	}
+
+	public AccountInfo verifyOtp(User user) {
+		// TODO Auto-generated method stub
+		
+		User temp = UserDao.getUserbyEmail(user.getEmail());
+		if(temp != null)
+		{
+			if(temp.getRegistrationOtp().equals(user.getRegistrationOtp()))
+			{
+				UserDao.activateAccount(user);
+				return AccountInfo.OTPVERIFIED;
+			}
+			
+		}
+		else
+		{
+			return AccountInfo.OTPVERIFIEDFAIL;
+		}
+		return AccountInfo.OTPVERIFIEDFAIL;
 	}
 
 }

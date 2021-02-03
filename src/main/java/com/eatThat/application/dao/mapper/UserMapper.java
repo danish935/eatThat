@@ -11,19 +11,22 @@ import com.eatThat.application.model.User;
 @Mapper
 public interface UserMapper {
 
-	@Insert("insert into users(first_name,last_name,email,password,active,email_verified,create_date,modified_date,deleted,diet_plan) values(#{firstName},#{lastName}, #{email},#{password},#{active},#{emailVerified},#{createDate},#{modifiedDate},#{deleted},#{dietPlan})")
+	@Insert("insert into users(first_name,last_name,email,password,active,registration_otp,create_date,modified_date,deleted,diet_plan) values(#{firstName},#{lastName}, #{email},#{password},#{active},#{registrationOtp},#{createDate},#{modifiedDate},#{deleted},#{dietPlan})")
 	@Options(useGeneratedKeys = true,keyProperty = "id",keyColumn="id")
 	public int insertUser(User user);
 
 	@Select("select * from users where id=#{userId}")
 	public User getUser(int userId);
 
-	@Select("select * from users where  email=#{email} AND password=#{password} and active=1 limit 1")
+	@Select("select * from users where  email=#{email} AND password=#{password} limit 1")
 	public User Login(User user);
 
 	@Update("update users set password=#{password} where email=#{email} AND deleted=0 and active=1")
 	public boolean changePassword(User user);
 	
-	@Select("select email from users where email=#{email} and deleted=0 and active=1")
+	@Select("select * from users where email=#{email} and deleted=0 limit 1")
 	public User getUserbyEmail(String email);
+
+	@Update("update users set active=1 where email=#{email}")
+	public boolean activateAccount(User user);
 }

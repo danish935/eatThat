@@ -38,7 +38,7 @@ public class DietPlanController {
 	//	if (items.size() > 0)
 		//{
 			response.setData(items);
-			response.setMessage("succes");
+			response.setMessage("success");
 			response.setStatus("00");
 			
 //		}

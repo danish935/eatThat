@@ -28,13 +28,15 @@ public class UserDao {
 		return user;
 	}
 	public User login(User user) {
-		// TODO Auto-generated method stub
 		return mapper.Login(user);
 		
 	}
 
 	public Boolean changePassword(User user) {
-		// TODO Auto-generated method stub
 		return mapper.changePassword(user);
+	}
+
+	public boolean activateAccount(User user) {
+		return mapper.activateAccount(user);
 	}
 }

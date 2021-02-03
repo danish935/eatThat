@@ -25,7 +25,7 @@ public class EmailUtil {
 	        msg.setTo(usr.getEmail());
 
 	        msg.setSubject("Eat-That Registration Complete.");
-	        msg.setText("Hello " + usr.getLastName() + " "+ usr.getFirstName() +"\n Welcome onboard on Eat That. Your account is created. you can use below credentials to login. \n Username: " + usr.getEmail() + "\n Password: " + usr.getPassword() + "\n \n Regards, \n\n Eat That Team.");
+	        msg.setText("Hello " + usr.getLastName() + " "+ usr.getFirstName() +"\n Welcome onboard on Eat That. Your account is created. use below credentials to login after account activation. \n Username: " + usr.getEmail() + "\n Password: " + usr.getPassword() + ". \n Use "+ usr.getRegistrationOtp()  + " as one time password to activate the account. \n \n Regards, \n\n Eat That Team.");
 
 	        javaMailSender.send(msg);
 

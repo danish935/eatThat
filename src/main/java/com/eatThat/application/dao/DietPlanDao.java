@@ -24,37 +24,30 @@ public class DietPlanDao {
 	DietPlanMapper dietPlanMapper;
 
 	public ArrayList<FoodItem> getAllItems(FoodItem foodItems) {
-		// TODO Auto-generated method stub
 		return dietPlanMapper.getAllItems(foodItems);
 	}
 
 	public List<NutritionInfo2> getNutritionInfo(int id, String name) {
-		// TODO Auto-generated method stub
 		return dietPlanMapper.getNutritionInfo(id, name);
 	}
 
 	public ArrayList<FoodCategories> getCategories() {
-		// TODO Auto-generated method stub
 		return dietPlanMapper.getCategories();
 	}
 
 	public ArrayList<DietPlans> getDietPlans() {
-		// TODO Auto-generated method stub
 		return dietPlanMapper.getDietPlans();
 	}
 
 	public Integer insertHeader(DietPlans value) {
-		// TODO Auto-generated method stub
 		return dietPlanMapper.insertHeader(value);
 	}
 
 	public int insertCategory(FoodCategories string) {
-		// TODO Auto-generated method stub
 		return dietPlanMapper.insertCategory(string);
 	}
 
 	public void truncateTables() {
-		// TODO Auto-generated method stub
 		dietPlanMapper.truncateTables("diet_plans");
 		dietPlanMapper.truncateTables("diet_categories");
 		dietPlanMapper.truncateTables("food_nutritions_info");
@@ -62,14 +55,20 @@ public class DietPlanDao {
 	}
 
 	public int insertFoodItem(FoodItem item) {
-		// TODO Auto-generated method stub
 		return dietPlanMapper.insertFoodItem(item);
 	}
 
 	public void insertNutritionInfo(String key, String string, int foodItemId, String foodItemName) {
-		// TODO Auto-generated method stub
 		 dietPlanMapper.insertNutritionInfo(key, string, foodItemId, foodItemName);
 
+	}
+
+	public ArrayList<FoodItem> getAllItemsByDietPlan(FoodItem foodItems) {
+		return dietPlanMapper.getAllItemsByDietPlan(foodItems);
+	}
+
+	public ArrayList<FoodItem> getAllItemsBySearchKey(FoodItem foodItems) {
+		return dietPlanMapper.getAllItemsBySearchKey(foodItems);
 	}
 
 }

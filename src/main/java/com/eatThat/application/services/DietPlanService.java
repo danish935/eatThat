@@ -27,8 +27,12 @@ public class DietPlanService {
 	DietPlanDao dietPlanDao;
 	public ArrayList<FoodItem> getAllItems(FoodItem foodItems) {
 		
-		 
+		if(foodItems.getCategoryId() != 0)
 		items = dietPlanDao.getAllItems(foodItems);
+		else if(foodItems.getSearchKey() != null)
+			items = dietPlanDao.getAllItemsBySearchKey(foodItems);
+		else
+			items = dietPlanDao.getAllItemsByDietPlan(foodItems);	
 		for(int i = 0 ; i< items.size(); i++)
 		{
 			FoodItem item = items.get(i);
@@ -41,15 +45,12 @@ public class DietPlanService {
 		return items;
 	}
 	public ArrayList<FoodCategories> getCategories() {
-		// TODO Auto-generated method stub
 		return dietPlanDao.getCategories();
 	}
 	public ArrayList<DietPlans> getDietPlans() {
-		// TODO Auto-generated method stub
 		return dietPlanDao.getDietPlans();
 	}
 	public Map<String, Integer> insertDietPlans(List<String> headers) {
-		// TODO Auto-generated method stub
 		Map<String, Integer> temp = new HashMap<String, Integer>();
 		for(int count = 0 ; count < headers.size(); count ++ )
 		{

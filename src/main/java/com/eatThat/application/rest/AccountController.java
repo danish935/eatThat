@@ -44,7 +44,7 @@ public class AccountController {
 		if (temp.getEmail() != null) {
 			response.setData(temp);
 			response.setStatus("00");
-			response.setMessage("User Register Successfully");
+			response.setMessage("User Register Successfully.");
 			emailUtil.sendRegistrationEmail(temp);
 		}
 		else{
@@ -60,20 +60,26 @@ public class AccountController {
 	//public Response<T> login(@RequestParam String email, @RequestParam String password) {
 		
 		public Response<T> login(@RequestBody User user) {
-
-		User usr = accountService.login(user);
+		
+		AccountInfo info = accountService.login(user);
 		
 		
-		if (usr !=null)
+		if (info == AccountInfo.SUCCESS)
 		{
 			response.setStatus("00");
 			response.setMessage("Login Successfully");
-			response.setData(usr);
+			response.setData(accountService.getUser(user));
 		}
-		else
+		else if(info == AccountInfo.INVALIDLOGIN)
 		{
 			response.setStatus("01");
 			response.setMessage("Invalid username/password");
+			response.setData(new User());
+		}
+		else if (info == AccountInfo.INACTIVE)
+		{
+			response.setStatus("02");
+			response.setMessage("User is inactive. Please activate account using OTP sent on email.");
 			response.setData(new User());
 		}
 		return response;
@@ -135,6 +141,28 @@ public class AccountController {
 			response.setMessage("Please try again later");
 			response.setData();
 		}
+		return response;
+	}
+	
+	
+	@RequestMapping(method = RequestMethod.POST, path = "/verifyOtp", consumes = "application/json")
+		public Response<T> verifyOtp(@RequestBody User user) {
+		
+		AccountInfo info = accountService.verifyOtp(user);
+	
+		if (info == AccountInfo.OTPVERIFIED)
+		{
+			response.setStatus("00");
+			response.setMessage("Account activated successfully.");
+			response.setData();
+		}
+		else
+		{
+			response.setStatus("01");
+			response.setMessage("Account activation fail. Please try again");
+			response.setData();
+		}
+		
 		return response;
 	}
 

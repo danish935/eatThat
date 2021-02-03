@@ -9,13 +9,9 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Options;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.SelectKey;
-import org.apache.poi.ss.formula.functions.T;
-
 import com.eatThat.application.model.DietPlans;
 import com.eatThat.application.model.FoodCategories;
 import com.eatThat.application.model.FoodItem;
-import com.eatThat.application.model.NutritionInfo;
 import com.eatThat.application.model.NutritionInfo2;
 
 @Mapper
@@ -56,4 +52,22 @@ public interface DietPlanMapper {
 
 	@Insert("insert into food_nutritions_info(Nutrition, weight, food_items_id, name) values(#{nutrition},#{weight},#{foodItemId},#{foodItemName})")
 	public void insertNutritionInfo(@Param(value = "nutrition") String nutrition,@Param(value = "weight") String weight, @Param(value = "foodItemId") int foodItemId, @Param(value = "foodItemName") String foodItemName);
+
+	@Select ("select fi.*, dl.plan_name, cat.category_name from food_items fi \r\n"
+			+ "join diet_plans dl \r\n"
+			+ "on fi.diet_plan_id = dl.id\r\n"
+			+ "join diet_categories cat\r\n"
+			+ "on fi.category_id = cat.id\r\n"
+			+ "AND\r\n"
+			+ "dl.id =#{dietPlanId};")
+	public ArrayList<FoodItem> getAllItemsByDietPlan(FoodItem foodItems);
+
+	@Select ("select fi.*, dl.plan_name, cat.category_name from food_items fi \r\n"
+			+ "join diet_plans dl \r\n"
+			+ "on fi.diet_plan_id = dl.id\r\n"
+			+ "join diet_categories cat\r\n"
+			+ "on fi.category_id = cat.id\r\n"
+			+ "AND\r\n"
+			+ "dl.id =#{dietPlanId} and fi.name LIKE '%' #{searchKey} '%';")
+	public ArrayList<FoodItem> getAllItemsBySearchKey(FoodItem foodItems);
 }
