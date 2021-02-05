@@ -18,7 +18,8 @@ public interface UserMapper {
 	@Select("select * from users where id=#{userId}")
 	public User getUser(int userId);
 
-	@Select("select * from users where  email=#{email} AND password=#{password} limit 1")
+	//@Select("select * from users where  email=#{email} AND password=#{password} limit 1")
+	@Select("select usr.*, pl.plan_name from users usr JOIN diet_plans pl on usr.diet_plan_id = pl.id AND usr.email=#{email} AND usr.password=#{password} limit 1")
 	public User Login(User user);
 
 	@Update("update users set password=#{password} where email=#{email} AND deleted=0 and active=1")

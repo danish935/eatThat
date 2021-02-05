@@ -15,6 +15,15 @@ public class User {
 	String registrationOtp;
 	Date createDate;
 	Date modifiedDate;
+	String planName;
+	public String getPlanName() {
+		return planName;
+	}
+
+	public void setPlanName(String planName) {
+		this.planName = planName;
+	}
+
 	int dietPlanId = 1;
 	public int getId() {
 		return id;
