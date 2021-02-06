@@ -53,7 +53,7 @@ public class DietPlanController {
 		if (items.size() > 0)
 		{
 			response.setCategories(items);
-			response.setMessage("succes");
+			response.setMessage("success");
 			response.setStatus("00");
 			
 		}
@@ -68,7 +68,7 @@ public class DietPlanController {
 		if (items.size() > 0)
 		{
 			response.setDietPlans(items);
-			response.setMessage("succes");
+			response.setMessage("success");
 			response.setStatus("00");
 			
 		}
