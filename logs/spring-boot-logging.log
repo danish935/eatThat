@@ -302,3 +302,79 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 2021-02-06 09:24:44.466  INFO 21136 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2021-02-06 09:24:44.478  INFO 21136 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-02-06 09:24:44.523  INFO 21136 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-06 09:24:44.624  INFO 21136 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 21136 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
+2021-02-06 09:24:44.624  INFO 21136 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
+2021-02-06 09:24:44.990  INFO 21136 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
+2021-02-06 09:24:44.991  INFO 21136 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-06 09:24:44.991  INFO 21136 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-02-06 09:24:45.010  INFO 21136 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
+2021-02-06 09:24:45.011  INFO 21136 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 385 ms
+2021-02-06 09:24:45.236  WARN 21136 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-06 09:24:45.254  INFO 21136 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 09:24:45.262  INFO 21136 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-06 09:24:45.267  INFO 21136 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-06 09:24:45.341  INFO 21136 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path '/app/api'
+2021-02-06 09:24:45.401  INFO 21136 --- [restartedMain] c.e.application.EatThatApplication       : Started EatThatApplication in 0.808 seconds (JVM running for 167.41)
+2021-02-06 09:24:45.402  INFO 21136 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-02-06 09:26:11.901  INFO 21136 --- [http-nio-9095-exec-2] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-06 09:26:11.901  INFO 21136 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-06 09:26:11.904  INFO 21136 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-02-06 09:26:11.905  INFO 21136 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-02-06 09:26:11.925  INFO 21136 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-02-06 11:47:43.760  INFO 28412 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 28412 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
+2021-02-06 11:47:43.765  INFO 28412 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
+2021-02-06 11:47:43.805  INFO 28412 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-06 11:47:43.805  INFO 28412 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-06 11:47:45.299  INFO 28412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
+2021-02-06 11:47:45.308  INFO 28412 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-06 11:47:45.308  INFO 28412 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-02-06 11:47:45.390  INFO 28412 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
+2021-02-06 11:47:45.390  INFO 28412 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1584 ms
+2021-02-06 11:47:46.497  WARN 28412 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-06 11:47:46.643  INFO 28412 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 11:47:46.709  INFO 28412 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-06 11:47:46.746  INFO 28412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-06 11:47:47.069  INFO 28412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path '/app/api'
+2021-02-06 11:47:47.535  INFO 28412 --- [restartedMain] c.e.application.EatThatApplication       : Started EatThatApplication in 4.116 seconds (JVM running for 5.131)
+2021-02-06 11:48:44.990  INFO 28412 --- [http-nio-9095-exec-1] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-06 11:48:44.991  INFO 28412 --- [http-nio-9095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-06 11:48:45.011  INFO 28412 --- [http-nio-9095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2021-02-06 11:51:05.749  INFO 28412 --- [http-nio-9095-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-06 11:51:06.095  INFO 28412 --- [http-nio-9095-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-06 11:56:43.942  INFO 28412 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-06 11:56:43.944  INFO 28412 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-06 11:56:43.960  INFO 28412 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-06 11:56:44.063  INFO 28412 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 28412 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
+2021-02-06 11:56:44.063  INFO 28412 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
+2021-02-06 11:56:44.449  INFO 28412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
+2021-02-06 11:56:44.450  INFO 28412 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-06 11:56:44.450  INFO 28412 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-02-06 11:56:44.472  INFO 28412 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
+2021-02-06 11:56:44.472  INFO 28412 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 407 ms
+2021-02-06 11:56:44.723  WARN 28412 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-06 11:56:44.740  INFO 28412 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 11:56:44.749  INFO 28412 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-06 11:56:44.755  INFO 28412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-06 11:56:44.832  INFO 28412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path '/app/api'
+2021-02-06 11:56:44.903  INFO 28412 --- [restartedMain] c.e.application.EatThatApplication       : Started EatThatApplication in 0.872 seconds (JVM running for 542.927)
+2021-02-06 11:56:44.905  INFO 28412 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-02-06 11:56:55.388  INFO 28412 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-06 11:56:55.460  INFO 28412 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 28412 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
+2021-02-06 11:56:55.460  INFO 28412 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
+2021-02-06 11:56:55.808  INFO 28412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
+2021-02-06 11:56:55.809  INFO 28412 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-06 11:56:55.809  INFO 28412 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-02-06 11:56:55.829  INFO 28412 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
+2021-02-06 11:56:55.829  INFO 28412 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 367 ms
+2021-02-06 11:56:56.074  WARN 28412 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-06 11:56:56.092  INFO 28412 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-06 11:56:56.099  INFO 28412 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-06 11:56:56.104  INFO 28412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-06 11:56:56.176  INFO 28412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path '/app/api'
+2021-02-06 11:56:56.238  INFO 28412 --- [restartedMain] c.e.application.EatThatApplication       : Started EatThatApplication in 0.804 seconds (JVM running for 554.262)
+2021-02-06 11:56:56.240  INFO 28412 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-02-06 12:11:30.332  INFO 28412 --- [http-nio-9095-exec-2] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-06 12:11:30.333  INFO 28412 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-06 12:11:30.335  INFO 28412 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-02-06 12:11:33.571  INFO 28412 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-02-06 12:11:33.609  INFO 28412 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.

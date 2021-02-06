@@ -48,11 +48,11 @@ public class DietPlanController {
 	@RequestMapping(method = RequestMethod.GET, path = "/getCategories")
 	public Response<T> getCategories() {
 		
-		ArrayList<FoodCategories> items = (ArrayList<FoodCategories>) dietPlanService.getCategories();
+		ArrayList<FoodCategories> categories = (ArrayList<FoodCategories>) dietPlanService.getCategories();
 		
-		if (items.size() > 0)
+		if (categories.size() > 0)
 		{
-			response.setCategories(items);
+			response.setCategories(categories);
 			response.setMessage("success");
 			response.setStatus("00");
 			
@@ -63,11 +63,11 @@ public class DietPlanController {
 	@RequestMapping(method = RequestMethod.GET, path = "/getDietPlans")
 	public Response<T> getDietPlans() {
 		
-		ArrayList<DietPlans> items = (ArrayList<DietPlans>) dietPlanService.getDietPlans();
+		ArrayList<DietPlans> dietPlans = (ArrayList<DietPlans>) dietPlanService.getDietPlans();
 		
-		if (items.size() > 0)
+		if (dietPlans.size() > 0)
 		{
-			response.setDietPlans(items);
+			response.setDietPlans(dietPlans);
 			response.setMessage("success");
 			response.setStatus("00");
 			
