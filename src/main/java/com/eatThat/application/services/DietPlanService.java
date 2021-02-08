@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.poi.ss.formula.functions.T;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +12,6 @@ import com.eatThat.application.dao.DietPlanDao;
 import com.eatThat.application.model.DietPlans;
 import com.eatThat.application.model.FoodCategories;
 import com.eatThat.application.model.FoodItem;
-import com.eatThat.application.model.NutritionInfo;
 import com.eatThat.application.model.NutritionInfo2;
 
 @Service

@@ -1,252 +1,243 @@
-2021-02-06 00:55:07.178  INFO 22368 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 22368 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
-2021-02-06 00:55:07.191  INFO 22368 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
-2021-02-06 00:55:07.230  INFO 22368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-02-06 00:55:07.230  INFO 22368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-02-06 00:55:08.584  INFO 22368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
-2021-02-06 00:55:08.593  INFO 22368 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-02-06 00:55:08.593  INFO 22368 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-02-06 00:55:08.678  INFO 22368 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
-2021-02-06 00:55:08.678  INFO 22368 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1447 ms
-2021-02-06 00:55:08.959 ERROR 22368 --- [restartedMain] o.m.spring.mapper.MapperFactoryBean      : Error while adding the mapper 'interface com.eatThat.application.dao.mapper.UserMapper' to configuration.
+2021-02-08 10:35:35.597  INFO 19572 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 19572 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
+2021-02-08 10:35:35.608  INFO 19572 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
+2021-02-08 10:35:35.657  INFO 19572 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-08 10:35:35.657  INFO 19572 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-08 10:35:36.958  INFO 19572 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
+2021-02-08 10:35:36.967  INFO 19572 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-08 10:35:36.967  INFO 19572 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-02-08 10:35:37.043  INFO 19572 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
+2021-02-08 10:35:37.043  INFO 19572 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1386 ms
+2021-02-08 10:35:42.216 DEBUG 19572 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2021-02-08 10:35:42.325  WARN 19572 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-08 10:35:42.454  INFO 19572 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-08 10:35:42.521  INFO 19572 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-08 10:35:42.540 DEBUG 19572 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-02-08 10:35:42.578  INFO 19572 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-08 10:35:42.610 DEBUG 19572 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/, /swagger-ui/] in 'viewControllerHandlerMapping'
+2021-02-08 10:35:42.636 DEBUG 19572 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**] in 'resourceHandlerMapping'
+2021-02-08 10:35:42.647 DEBUG 19572 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-02-08 10:35:42.928  INFO 19572 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path '/app/api'
+2021-02-08 10:35:43.340  INFO 19572 --- [restartedMain] c.e.application.EatThatApplication       : Started EatThatApplication in 8.083 seconds (JVM running for 9.017)
+2021-02-08 10:36:07.377  INFO 19572 --- [http-nio-9095-exec-2] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-08 10:36:07.378  INFO 19572 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-08 10:36:07.378 DEBUG 19572 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-02-08 10:36:07.396 DEBUG 19572 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2021-02-08 10:36:07.396  INFO 19572 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2021-02-08 10:36:15.362 DEBUG 19572 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/app/api/dietPlan/getDietPlans", parameters={}
+2021-02-08 10:36:15.365 DEBUG 19572 --- [http-nio-9095-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eatThat.application.rest.DietPlanController#getDietPlans()
+2021-02-08 10:36:19.771  INFO 19572 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-08 10:36:20.102  INFO 19572 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-08 10:36:20.167 DEBUG 19572 --- [http-nio-9095-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-02-08 10:36:20.168 DEBUG 19572 --- [http-nio-9095-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.eatThat.application.model.Response@613ce861]
+2021-02-08 10:36:20.184 DEBUG 19572 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-08 10:38:39.794  INFO 19572 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-08 10:38:39.796  INFO 19572 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-08 10:38:39.813  INFO 19572 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-08 10:38:39.879  INFO 19572 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 19572 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
+2021-02-08 10:38:39.879  INFO 19572 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
+2021-02-08 10:38:40.259  INFO 19572 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
+2021-02-08 10:38:40.260  INFO 19572 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-08 10:38:40.260  INFO 19572 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-02-08 10:38:40.289  INFO 19572 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
+2021-02-08 10:38:40.289  INFO 19572 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 407 ms
+2021-02-08 10:38:52.254  INFO 22800 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 22800 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
+2021-02-08 10:38:52.262  INFO 22800 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
+2021-02-08 10:38:52.295  INFO 22800 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-08 10:38:52.296  INFO 22800 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-08 10:38:53.527  INFO 22800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
+2021-02-08 10:38:53.534  INFO 22800 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-08 10:38:53.534  INFO 22800 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-02-08 10:38:53.613  INFO 22800 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
+2021-02-08 10:38:53.614  INFO 22800 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1318 ms
+2021-02-08 10:38:59.263 DEBUG 22800 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2021-02-08 10:38:59.375  WARN 22800 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-08 10:38:59.511  INFO 22800 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-08 10:38:59.559  INFO 22800 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-08 10:38:59.570 DEBUG 22800 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-02-08 10:38:59.598  INFO 22800 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-08 10:38:59.619 DEBUG 22800 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/, /swagger-ui/] in 'viewControllerHandlerMapping'
+2021-02-08 10:38:59.648 DEBUG 22800 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**] in 'resourceHandlerMapping'
+2021-02-08 10:38:59.659 DEBUG 22800 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-02-08 10:38:59.916  INFO 22800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path '/app/api'
+2021-02-08 10:39:00.318  INFO 22800 --- [restartedMain] c.e.application.EatThatApplication       : Started EatThatApplication in 8.365 seconds (JVM running for 9.129)
+2021-02-08 10:39:08.017  INFO 22800 --- [http-nio-9095-exec-2] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-08 10:39:08.018  INFO 22800 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-08 10:39:08.018 DEBUG 22800 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-02-08 10:39:08.038 DEBUG 22800 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2021-02-08 10:39:08.039  INFO 22800 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2021-02-08 10:39:15.177 DEBUG 22800 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/app/api/dietPlan/getDietPlans", parameters={}
+2021-02-08 10:39:15.182 DEBUG 22800 --- [http-nio-9095-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eatThat.application.rest.DietPlanController#getDietPlans()
+2021-02-08 10:39:17.168  INFO 22800 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-08 10:39:17.475  INFO 22800 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-08 10:39:22.246 DEBUG 22800 --- [http-nio-9095-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-02-08 10:39:22.247 DEBUG 22800 --- [http-nio-9095-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.eatThat.application.model.Response@2b941038]
+2021-02-08 10:39:22.266 DEBUG 22800 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-08 10:42:27.640  INFO 30504 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 30504 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
+2021-02-08 10:42:27.644  INFO 30504 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
+2021-02-08 10:42:27.691  INFO 30504 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-08 10:42:27.691  INFO 30504 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-08 10:42:28.887  INFO 30504 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
+2021-02-08 10:42:28.894  INFO 30504 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-08 10:42:28.894  INFO 30504 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-02-08 10:42:28.964  INFO 30504 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
+2021-02-08 10:42:28.964  INFO 30504 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1272 ms
+2021-02-08 10:42:34.605 DEBUG 30504 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2021-02-08 10:42:34.714  WARN 30504 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-08 10:42:34.845  INFO 30504 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-08 10:42:34.893  INFO 30504 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-08 10:42:34.913 DEBUG 30504 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-02-08 10:42:34.939  INFO 30504 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-08 10:42:34.960 DEBUG 30504 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/, /swagger-ui/] in 'viewControllerHandlerMapping'
+2021-02-08 10:42:34.984 DEBUG 30504 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**] in 'resourceHandlerMapping'
+2021-02-08 10:42:34.995 DEBUG 30504 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-02-08 10:42:35.279  INFO 30504 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path '/app/api'
+2021-02-08 10:42:35.685  INFO 30504 --- [restartedMain] c.e.application.EatThatApplication       : Started EatThatApplication in 8.367 seconds (JVM running for 9.175)
+2021-02-08 10:42:48.873  INFO 30504 --- [http-nio-9095-exec-1] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-08 10:42:48.874  INFO 30504 --- [http-nio-9095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-08 10:42:48.874 DEBUG 30504 --- [http-nio-9095-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-02-08 10:42:48.897 DEBUG 30504 --- [http-nio-9095-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2021-02-08 10:42:48.897  INFO 30504 --- [http-nio-9095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2021-02-08 10:42:59.600 DEBUG 30504 --- [http-nio-9095-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/app/api/dietPlan/getCategories", parameters={}
+2021-02-08 10:42:59.606 DEBUG 30504 --- [http-nio-9095-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eatThat.application.rest.DietPlanController#getCategories()
+2021-02-08 10:42:59.629  INFO 30504 --- [http-nio-9095-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-08 10:42:59.896  INFO 30504 --- [http-nio-9095-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-08 10:43:06.127 DEBUG 30504 --- [http-nio-9095-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-02-08 10:43:06.127 DEBUG 30504 --- [http-nio-9095-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.eatThat.application.model.Response@45d81be5]
+2021-02-08 10:43:06.144 DEBUG 30504 --- [http-nio-9095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-08 10:44:01.197  INFO 30144 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 30144 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
+2021-02-08 10:44:01.202  INFO 30144 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
+2021-02-08 10:44:01.238  INFO 30144 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-08 10:44:02.410  INFO 30144 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
+2021-02-08 10:44:02.417  INFO 30144 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-08 10:44:02.418  INFO 30144 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-02-08 10:44:02.496  INFO 30144 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
+2021-02-08 10:44:02.496  INFO 30144 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1257 ms
+2021-02-08 10:44:04.267 DEBUG 30144 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: someFilter urls=[/app/api/*] order=1, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, httpLoggingFilter urls=[/*] order=2147483647
+2021-02-08 10:44:04.267 DEBUG 30144 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2021-02-08 10:44:05.092 DEBUG 30144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2021-02-08 10:44:05.204  WARN 30144 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-08 10:44:05.332  INFO 30144 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-08 10:44:05.378  INFO 30144 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-08 10:44:05.389 DEBUG 30144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-02-08 10:44:05.420  INFO 30144 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-08 10:44:05.441 DEBUG 30144 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/, /swagger-ui/] in 'viewControllerHandlerMapping'
+2021-02-08 10:44:05.465 DEBUG 30144 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**] in 'resourceHandlerMapping'
+2021-02-08 10:44:05.482 DEBUG 30144 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-02-08 10:44:05.741  INFO 30144 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path '/app/api'
+2021-02-08 10:44:06.133  INFO 30144 --- [restartedMain] c.e.application.EatThatApplication       : Started EatThatApplication in 5.235 seconds (JVM running for 6.02)
+2021-02-08 10:44:10.550  INFO 30144 --- [http-nio-9095-exec-2] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-08 10:44:10.551  INFO 30144 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-08 10:44:10.551 DEBUG 30144 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-02-08 10:44:10.570 DEBUG 30144 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2021-02-08 10:44:10.570  INFO 30144 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2021-02-08 10:44:21.316 DEBUG 30144 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/app/api/dietPlan/getCategories", parameters={}
+2021-02-08 10:44:21.320 DEBUG 30144 --- [http-nio-9095-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eatThat.application.rest.DietPlanController#getCategories()
+2021-02-08 10:44:21.340  INFO 30144 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-08 10:44:21.616  INFO 30144 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-08 10:44:42.974 DEBUG 30144 --- [http-nio-9095-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-02-08 10:44:42.975 DEBUG 30144 --- [http-nio-9095-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.eatThat.application.model.Response@fae2458]
+2021-02-08 10:44:42.990 DEBUG 30144 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-08 10:45:24.882  INFO 30144 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-08 10:45:24.884  INFO 30144 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-08 10:45:24.900  INFO 30144 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-08 10:45:25.000  INFO 30144 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 30144 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
+2021-02-08 10:45:25.000  INFO 30144 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
+2021-02-08 10:45:25.387  INFO 30144 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
+2021-02-08 10:45:25.387  INFO 30144 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-08 10:45:25.387  INFO 30144 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-02-08 10:45:25.408  INFO 30144 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
+2021-02-08 10:45:25.408  INFO 30144 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 405 ms
+2021-02-08 10:45:27.754 DEBUG 30144 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: someFilter urls=[/app/api/*] order=1, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, httpLoggingFilter urls=[/*] order=2147483647
+2021-02-08 10:45:27.755 DEBUG 30144 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2021-02-08 10:45:27.967 DEBUG 30144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2021-02-08 10:45:27.986  WARN 30144 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-08 10:45:28.003  INFO 30144 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-08 10:45:28.011  INFO 30144 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-08 10:45:28.014 DEBUG 30144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-02-08 10:45:28.017  INFO 30144 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-08 10:45:28.022 DEBUG 30144 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/, /swagger-ui/] in 'viewControllerHandlerMapping'
+2021-02-08 10:45:28.029 DEBUG 30144 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**] in 'resourceHandlerMapping'
+2021-02-08 10:45:28.033 DEBUG 30144 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-02-08 10:45:28.094  INFO 30144 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path '/app/api'
+2021-02-08 10:45:28.160  INFO 30144 --- [restartedMain] c.e.application.EatThatApplication       : Started EatThatApplication in 3.187 seconds (JVM running for 88.047)
+2021-02-08 10:45:28.162  INFO 30144 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-02-08 10:47:53.450  INFO 29472 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 29472 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
+2021-02-08 10:47:53.455  INFO 29472 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
+2021-02-08 10:47:53.498  INFO 29472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-08 10:47:54.702  INFO 29472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
+2021-02-08 10:47:54.710  INFO 29472 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-08 10:47:54.710  INFO 29472 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-02-08 10:47:54.805  INFO 29472 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
+2021-02-08 10:47:54.806  INFO 29472 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1307 ms
+2021-02-08 10:47:56.915 DEBUG 29472 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: someFilter urls=[/app/api/*] order=1, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, httpLoggingFilter urls=[/*] order=2147483647
+2021-02-08 10:47:56.915 DEBUG 29472 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2021-02-08 10:47:57.706 DEBUG 29472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2021-02-08 10:47:57.816  WARN 29472 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-08 10:47:57.953  INFO 29472 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-08 10:47:58.010  INFO 29472 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-08 10:47:58.025 DEBUG 29472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-02-08 10:47:58.056  INFO 29472 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-08 10:47:58.083 DEBUG 29472 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/, /swagger-ui/] in 'viewControllerHandlerMapping'
+2021-02-08 10:47:58.118 DEBUG 29472 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**] in 'resourceHandlerMapping'
+2021-02-08 10:47:58.130 DEBUG 29472 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-02-08 10:47:58.397  INFO 29472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path '/app/api'
+2021-02-08 10:47:58.791  INFO 29472 --- [restartedMain] c.e.application.EatThatApplication       : Started EatThatApplication in 5.688 seconds (JVM running for 6.467)
+2021-02-08 10:48:19.401  INFO 29472 --- [http-nio-9095-exec-2] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-08 10:48:19.402  INFO 29472 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-08 10:48:19.402 DEBUG 29472 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-02-08 10:48:19.422 DEBUG 29472 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2021-02-08 10:48:19.422  INFO 29472 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2021-02-08 10:48:25.916 DEBUG 29472 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/app/api/dietPlan/getCategories", parameters={}
+2021-02-08 10:48:25.919 DEBUG 29472 --- [http-nio-9095-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eatThat.application.rest.DietPlanController#getCategories()
+2021-02-08 10:48:25.941  INFO 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-08 10:48:26.225  INFO 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-08 10:48:28.103 DEBUG 29472 --- [http-nio-9095-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-02-08 10:48:28.104 DEBUG 29472 --- [http-nio-9095-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.eatThat.application.model.Response@6ea0db8e]
+2021-02-08 10:48:28.120 DEBUG 29472 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-08 10:50:52.139 DEBUG 29472 --- [http-nio-9095-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/app/api/dietPlan/getCategories", parameters={}
+2021-02-08 10:50:52.140 DEBUG 29472 --- [http-nio-9095-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eatThat.application.rest.DietPlanController#getCategories()
+2021-02-08 10:55:49.951  INFO 29472 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-08 10:55:49.956  INFO 29472 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-08 10:55:49.986  INFO 29472 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-08 10:55:50.097  INFO 29472 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 29472 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
+2021-02-08 10:55:50.097 DEBUG 29472 --- [restartedMain] c.e.application.EatThatApplication       : Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2021-02-08 10:55:50.097  INFO 29472 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
+2021-02-08 10:55:50.510  INFO 29472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
+2021-02-08 10:55:50.511  INFO 29472 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-08 10:55:50.511  INFO 29472 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-02-08 10:55:50.534  INFO 29472 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
+2021-02-08 10:55:50.534  INFO 29472 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 434 ms
+2021-02-08 10:56:02.229 DEBUG 29472 --- [http-nio-9095-exec-5] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+### The error may exist in com/eatThat/application/dao/mapper/DietPlanMapper.java (best guess)
+### The error may involve com.eatThat.application.dao.mapper.DietPlanMapper.getCategories
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+2021-02-08 10:56:03.407 DEBUG 29472 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: someFilter urls=[/app/api/*] order=1, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, httpLoggingFilter urls=[/*] order=2147483647
+2021-02-08 10:56:03.407 DEBUG 29472 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2021-02-08 10:56:03.455 DEBUG 29472 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6812d627
+2021-02-08 10:56:03.691 DEBUG 29472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2021-02-08 10:56:03.715  WARN 29472 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-08 10:56:03.736  INFO 29472 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-08 10:56:03.745  INFO 29472 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-08 10:56:03.750 DEBUG 29472 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-02-08 10:56:03.757  INFO 29472 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-08 10:56:03.766 DEBUG 29472 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/, /swagger-ui/] in 'viewControllerHandlerMapping'
+2021-02-08 10:56:03.773 DEBUG 29472 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**] in 'resourceHandlerMapping'
+2021-02-08 10:56:03.777 DEBUG 29472 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-02-08 10:56:03.831  INFO 29472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path '/app/api'
+2021-02-08 10:56:03.899  INFO 29472 --- [restartedMain] c.e.application.EatThatApplication       : Started EatThatApplication in 13.831 seconds (JVM running for 491.616)
+2021-02-08 10:56:03.901  INFO 29472 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-02-08 10:56:04.470 ERROR 29472 --- [http-nio-9095-exec-5] c.e.application.util.HttpLoggingFilter   : Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+### The error may exist in com/eatThat/application/dao/mapper/DietPlanMapper.java (best guess)
+### The error may involve com.eatThat.application.dao.mapper.DietPlanMapper.getCategories
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+2021-02-08 10:56:04.477 ERROR 29472 --- [http-nio-9095-exec-5] o.apache.coyote.http11.Http11Processor   : Error processing request
 
-org.apache.ibatis.builder.BuilderException: Detected conflicting annotations '@org.apache.ibatis.annotations.Select(databaseId="", value={"select * from users where  email= limit 1"})' and '@org.apache.ibatis.annotations.Select(databaseId="", value={"select usr.*, pl.plan_name from users usr JOIN diet_plans pl on usr.diet_plan_id = pl.id AND usr.email=#{email} AND usr.password=#{password}\'limit 1"})' on 'com.eatThat.application.dao.mapper.UserMapper.Login'.
-	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.lambda$getAnnotationWrapper$6(MapperAnnotationBuilder.java:650) ~[mybatis-3.5.5.jar:3.5.5]
-	at java.base/java.util.HashMap.merge(HashMap.java:1387) ~[na:na]
-	at java.base/java.util.stream.Collectors.lambda$toMap$68(Collectors.java:1658) ~[na:na]
-	at java.base/java.util.stream.ReduceOps$3ReducingSink.accept(ReduceOps.java:169) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195) ~[na:na]
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274) ~[na:na]
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[na:na]
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578) ~[na:na]
-	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.getAnnotationWrapper(MapperAnnotationBuilder.java:649) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.getAnnotationWrapper(MapperAnnotationBuilder.java:641) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:127) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:819) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80) ~[mybatis-spring-2.0.5.jar:2.0.5]
-	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44) ~[spring-tx-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at com.eatThat.application.EatThatApplication.main(EatThatApplication.java:19) ~[main/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-
-2021-02-06 00:55:08.960  WARN 22368 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDao': Unsatisfied dependency expressed through field 'mapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [D:\Work\eatThat\bin\main\com\eatThat\application\dao\mapper\UserMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Detected conflicting annotations '@org.apache.ibatis.annotations.Select(databaseId="", value={"select * from users where  email= limit 1"})' and '@org.apache.ibatis.annotations.Select(databaseId="", value={"select usr.*, pl.plan_name from users usr JOIN diet_plans pl on usr.diet_plan_id = pl.id AND usr.email=#{email} AND usr.password=#{password}\'limit 1"})' on 'com.eatThat.application.dao.mapper.UserMapper.Login'.
-2021-02-06 00:55:08.963  INFO 22368 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2021-02-06 00:55:08.974  INFO 22368 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2021-02-06 00:55:08.976 ERROR 22368 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDao': Unsatisfied dependency expressed through field 'mapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [D:\Work\eatThat\bin\main\com\eatThat\application\dao\mapper\UserMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Detected conflicting annotations '@org.apache.ibatis.annotations.Select(databaseId="", value={"select * from users where  email= limit 1"})' and '@org.apache.ibatis.annotations.Select(databaseId="", value={"select usr.*, pl.plan_name from users usr JOIN diet_plans pl on usr.diet_plan_id = pl.id AND usr.email=#{email} AND usr.password=#{password}\'limit 1"})' on 'com.eatThat.application.dao.mapper.UserMapper.Login'.
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at com.eatThat.application.EatThatApplication.main(EatThatApplication.java:19) ~[main/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [D:\Work\eatThat\bin\main\com\eatThat\application\dao\mapper\UserMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Detected conflicting annotations '@org.apache.ibatis.annotations.Select(databaseId="", value={"select * from users where  email= limit 1"})' and '@org.apache.ibatis.annotations.Select(databaseId="", value={"select usr.*, pl.plan_name from users usr JOIN diet_plans pl on usr.diet_plan_id = pl.id AND usr.email=#{email} AND usr.password=#{password}\'limit 1"})' on 'com.eatThat.application.dao.mapper.UserMapper.Login'.
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	... 25 common frames omitted
-Caused by: java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Detected conflicting annotations '@org.apache.ibatis.annotations.Select(databaseId="", value={"select * from users where  email= limit 1"})' and '@org.apache.ibatis.annotations.Select(databaseId="", value={"select usr.*, pl.plan_name from users usr JOIN diet_plans pl on usr.diet_plan_id = pl.id AND usr.email=#{email} AND usr.password=#{password}\'limit 1"})' on 'com.eatThat.application.dao.mapper.UserMapper.Login'.
-	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:83) ~[mybatis-spring-2.0.5.jar:2.0.5]
-	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44) ~[spring-tx-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	... 35 common frames omitted
-Caused by: org.apache.ibatis.builder.BuilderException: Detected conflicting annotations '@org.apache.ibatis.annotations.Select(databaseId="", value={"select * from users where  email= limit 1"})' and '@org.apache.ibatis.annotations.Select(databaseId="", value={"select usr.*, pl.plan_name from users usr JOIN diet_plans pl on usr.diet_plan_id = pl.id AND usr.email=#{email} AND usr.password=#{password}\'limit 1"})' on 'com.eatThat.application.dao.mapper.UserMapper.Login'.
-	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.lambda$getAnnotationWrapper$6(MapperAnnotationBuilder.java:650) ~[mybatis-3.5.5.jar:3.5.5]
-	at java.base/java.util.HashMap.merge(HashMap.java:1387) ~[na:na]
-	at java.base/java.util.stream.Collectors.lambda$toMap$68(Collectors.java:1658) ~[na:na]
-	at java.base/java.util.stream.ReduceOps$3ReducingSink.accept(ReduceOps.java:169) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195) ~[na:na]
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274) ~[na:na]
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[na:na]
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578) ~[na:na]
-	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.getAnnotationWrapper(MapperAnnotationBuilder.java:649) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.getAnnotationWrapper(MapperAnnotationBuilder.java:641) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:127) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:819) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80) ~[mybatis-spring-2.0.5.jar:2.0.5]
-	... 38 common frames omitted
-
-2021-02-06 00:55:54.323  INFO 18368 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 18368 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
-2021-02-06 00:55:54.328  INFO 18368 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
-2021-02-06 00:55:54.382  INFO 18368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-02-06 00:55:54.383  INFO 18368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-02-06 00:55:55.596  INFO 18368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
-2021-02-06 00:55:55.603  INFO 18368 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-02-06 00:55:55.603  INFO 18368 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-02-06 00:55:55.675  INFO 18368 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
-2021-02-06 00:55:55.675  INFO 18368 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1292 ms
-2021-02-06 00:55:56.671  WARN 18368 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2021-02-06 00:55:56.817  INFO 18368 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-02-06 00:55:56.868  INFO 18368 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-02-06 00:55:56.906  INFO 18368 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2021-02-06 00:55:57.229  INFO 18368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path '/app/api'
-2021-02-06 00:55:57.635  INFO 18368 --- [restartedMain] c.e.application.EatThatApplication       : Started EatThatApplication in 3.591 seconds (JVM running for 4.355)
-2021-02-06 00:56:10.296  INFO 18368 --- [http-nio-9095-exec-2] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-02-06 00:56:10.297  INFO 18368 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-02-06 00:56:10.317  INFO 18368 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
-2021-02-06 00:56:10.389  INFO 18368 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-02-06 00:56:10.673  INFO 18368 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-02-06 00:56:10.773 ERROR 18368 --- [http-nio-9095-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/app/api] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
-### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1111''limit 1' at line 1
-### The error may exist in com/eatThat/application/dao/mapper/UserMapper.java (best guess)
-### The error may involve com.eatThat.application.dao.mapper.UserMapper.Login-Inline
-### The error occurred while setting parameters
-### SQL: select usr.*, pl.plan_name from users usr JOIN diet_plans pl on usr.diet_plan_id = pl.id AND usr.email=? AND usr.password=?'limit 1
-### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1111''limit 1' at line 1
-; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1111''limit 1' at line 1] with root cause
-
-java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1111''limit 1' at line 1
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.22.jar:8.0.22]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.22.jar:8.0.22]
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-3.4.5.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-3.4.5.jar:na]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76) ~[mybatis-3.5.5.jar:3.5.5]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.5.jar:2.0.5]
-	at com.sun.proxy.$Proxy61.selectOne(Unknown Source) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159) ~[mybatis-spring-2.0.5.jar:2.0.5]
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85) ~[mybatis-3.5.5.jar:3.5.5]
-	at com.sun.proxy.$Proxy69.Login(Unknown Source) ~[na:na]
-	at com.eatThat.application.dao.UserDao.login(UserDao.java:31) ~[main/:na]
-	at com.eatThat.application.services.AccountService.login(AccountService.java:41) ~[main/:na]
-	at com.eatThat.application.rest.AccountController.login(AccountController.java:64) ~[main/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+java.lang.NullPointerException: Cannot invoke "org.apache.catalina.Service.getContainer()" because the return value of "org.apache.catalina.connector.Connector.getService()" is null
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:412) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
 	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
 	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
 	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
@@ -257,124 +248,83 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
 	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
 
-2021-02-06 00:56:29.816  INFO 18368 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-02-06 00:56:29.818  INFO 18368 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2021-02-06 00:56:29.827  INFO 18368 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-02-06 00:56:29.889  INFO 18368 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 18368 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
-2021-02-06 00:56:29.889  INFO 18368 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
-2021-02-06 00:56:30.241  INFO 18368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
-2021-02-06 00:56:30.241  INFO 18368 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-02-06 00:56:30.241  INFO 18368 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-02-06 00:56:30.267  INFO 18368 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
-2021-02-06 00:56:30.267  INFO 18368 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 376 ms
-2021-02-06 00:56:30.488  WARN 18368 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2021-02-06 00:56:30.507  INFO 18368 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-02-06 00:56:30.515  INFO 18368 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-02-06 00:56:30.521  INFO 18368 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2021-02-06 00:56:30.590  INFO 18368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path '/app/api'
-2021-02-06 00:56:30.649  INFO 18368 --- [restartedMain] c.e.application.EatThatApplication       : Started EatThatApplication in 0.782 seconds (JVM running for 37.37)
-2021-02-06 00:56:30.651  INFO 18368 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2021-02-06 00:56:31.913  INFO 18368 --- [http-nio-9095-exec-2] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-02-06 00:56:31.914  INFO 18368 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-02-06 00:56:31.916  INFO 18368 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2021-02-06 00:56:31.918  INFO 18368 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2021-02-06 00:56:31.935  INFO 18368 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2021-02-06 09:21:59.303  INFO 21136 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 21136 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
-2021-02-06 09:21:59.308  INFO 21136 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
-2021-02-06 09:21:59.347  INFO 21136 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-02-06 09:21:59.347  INFO 21136 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-02-06 09:22:00.707  INFO 21136 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
-2021-02-06 09:22:00.716  INFO 21136 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-02-06 09:22:00.716  INFO 21136 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-02-06 09:22:00.795  INFO 21136 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
-2021-02-06 09:22:00.796  INFO 21136 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1448 ms
-2021-02-06 09:22:01.939  WARN 21136 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2021-02-06 09:22:02.093  INFO 21136 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-02-06 09:22:02.156  INFO 21136 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-02-06 09:22:02.205  INFO 21136 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2021-02-06 09:22:02.557  INFO 21136 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path '/app/api'
-2021-02-06 09:22:03.054  INFO 21136 --- [restartedMain] c.e.application.EatThatApplication       : Started EatThatApplication in 4.08 seconds (JVM running for 5.063)
-2021-02-06 09:22:25.686  INFO 21136 --- [http-nio-9095-exec-1] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-02-06 09:22:25.687  INFO 21136 --- [http-nio-9095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-02-06 09:22:25.708  INFO 21136 --- [http-nio-9095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
-2021-02-06 09:22:25.742  INFO 21136 --- [http-nio-9095-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-02-06 09:22:26.068  INFO 21136 --- [http-nio-9095-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-02-06 09:24:44.466  INFO 21136 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-02-06 09:24:44.478  INFO 21136 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2021-02-06 09:24:44.523  INFO 21136 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-02-06 09:24:44.624  INFO 21136 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 21136 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
-2021-02-06 09:24:44.624  INFO 21136 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
-2021-02-06 09:24:44.990  INFO 21136 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
-2021-02-06 09:24:44.991  INFO 21136 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-02-06 09:24:44.991  INFO 21136 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-02-06 09:24:45.010  INFO 21136 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
-2021-02-06 09:24:45.011  INFO 21136 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 385 ms
-2021-02-06 09:24:45.236  WARN 21136 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2021-02-06 09:24:45.254  INFO 21136 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-02-06 09:24:45.262  INFO 21136 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-02-06 09:24:45.267  INFO 21136 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2021-02-06 09:24:45.341  INFO 21136 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path '/app/api'
-2021-02-06 09:24:45.401  INFO 21136 --- [restartedMain] c.e.application.EatThatApplication       : Started EatThatApplication in 0.808 seconds (JVM running for 167.41)
-2021-02-06 09:24:45.402  INFO 21136 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2021-02-06 09:26:11.901  INFO 21136 --- [http-nio-9095-exec-2] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-02-06 09:26:11.901  INFO 21136 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-02-06 09:26:11.904  INFO 21136 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2021-02-06 09:26:11.905  INFO 21136 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2021-02-06 09:26:11.925  INFO 21136 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2021-02-06 11:47:43.760  INFO 28412 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 28412 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
-2021-02-06 11:47:43.765  INFO 28412 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
-2021-02-06 11:47:43.805  INFO 28412 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-02-06 11:47:43.805  INFO 28412 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-02-06 11:47:45.299  INFO 28412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
-2021-02-06 11:47:45.308  INFO 28412 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-02-06 11:47:45.308  INFO 28412 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-02-06 11:47:45.390  INFO 28412 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
-2021-02-06 11:47:45.390  INFO 28412 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1584 ms
-2021-02-06 11:47:46.497  WARN 28412 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2021-02-06 11:47:46.643  INFO 28412 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-02-06 11:47:46.709  INFO 28412 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-02-06 11:47:46.746  INFO 28412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2021-02-06 11:47:47.069  INFO 28412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path '/app/api'
-2021-02-06 11:47:47.535  INFO 28412 --- [restartedMain] c.e.application.EatThatApplication       : Started EatThatApplication in 4.116 seconds (JVM running for 5.131)
-2021-02-06 11:48:44.990  INFO 28412 --- [http-nio-9095-exec-1] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-02-06 11:48:44.991  INFO 28412 --- [http-nio-9095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-02-06 11:48:45.011  INFO 28412 --- [http-nio-9095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
-2021-02-06 11:51:05.749  INFO 28412 --- [http-nio-9095-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-02-06 11:51:06.095  INFO 28412 --- [http-nio-9095-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-02-06 11:56:43.942  INFO 28412 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-02-06 11:56:43.944  INFO 28412 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2021-02-06 11:56:43.960  INFO 28412 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-02-06 11:56:44.063  INFO 28412 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 28412 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
-2021-02-06 11:56:44.063  INFO 28412 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
-2021-02-06 11:56:44.449  INFO 28412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
-2021-02-06 11:56:44.450  INFO 28412 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-02-06 11:56:44.450  INFO 28412 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-02-06 11:56:44.472  INFO 28412 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
-2021-02-06 11:56:44.472  INFO 28412 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 407 ms
-2021-02-06 11:56:44.723  WARN 28412 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2021-02-06 11:56:44.740  INFO 28412 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-02-06 11:56:44.749  INFO 28412 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-02-06 11:56:44.755  INFO 28412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2021-02-06 11:56:44.832  INFO 28412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path '/app/api'
-2021-02-06 11:56:44.903  INFO 28412 --- [restartedMain] c.e.application.EatThatApplication       : Started EatThatApplication in 0.872 seconds (JVM running for 542.927)
-2021-02-06 11:56:44.905  INFO 28412 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2021-02-06 11:56:55.388  INFO 28412 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-02-06 11:56:55.460  INFO 28412 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 28412 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
-2021-02-06 11:56:55.460  INFO 28412 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
-2021-02-06 11:56:55.808  INFO 28412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
-2021-02-06 11:56:55.809  INFO 28412 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-02-06 11:56:55.809  INFO 28412 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-02-06 11:56:55.829  INFO 28412 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
-2021-02-06 11:56:55.829  INFO 28412 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 367 ms
-2021-02-06 11:56:56.074  WARN 28412 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2021-02-06 11:56:56.092  INFO 28412 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-02-06 11:56:56.099  INFO 28412 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-02-06 11:56:56.104  INFO 28412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2021-02-06 11:56:56.176  INFO 28412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path '/app/api'
-2021-02-06 11:56:56.238  INFO 28412 --- [restartedMain] c.e.application.EatThatApplication       : Started EatThatApplication in 0.804 seconds (JVM running for 554.262)
-2021-02-06 11:56:56.240  INFO 28412 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2021-02-06 12:11:30.332  INFO 28412 --- [http-nio-9095-exec-2] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-02-06 12:11:30.333  INFO 28412 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-02-06 12:11:30.335  INFO 28412 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2021-02-06 12:11:33.571  INFO 28412 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2021-02-06 12:11:33.609  INFO 28412 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-02-08 10:56:04.478  WARN 29472 --- [http-nio-9095-exec-5] o.a.catalina.connector.CoyoteAdapter     : Exception while attempting to add an entry to the access log
+
+java.lang.NullPointerException: Cannot invoke "org.apache.catalina.Service.getContainer()" because the return value of "org.apache.catalina.connector.Connector.getService()" is null
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:490) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:404) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2021-02-08 10:56:10.035  INFO 29472 --- [http-nio-9095-exec-2] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-08 10:56:10.035  INFO 29472 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-08 10:56:10.035 DEBUG 29472 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-02-08 10:56:10.037 DEBUG 29472 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2021-02-08 10:56:10.037  INFO 29472 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-02-08 10:56:15.572 DEBUG 29472 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/app/api/dietPlan/getCategories", parameters={}
+2021-02-08 10:56:15.572 DEBUG 29472 --- [http-nio-9095-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eatThat.application.rest.DietPlanController#getCategories()
+2021-02-08 10:56:19.544 DEBUG 29472 --- [http-nio-9095-exec-2] c.e.application.rest.AccountController   : in categories
+2021-02-08 10:56:21.352 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : HikariPool-2 - configuration:
+2021-02-08 10:56:21.362 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension.............false
+2021-02-08 10:56:21.362 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : autoCommit......................true
+2021-02-08 10:56:21.362 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : catalog.........................none
+2021-02-08 10:56:21.362 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : connectionInitSql...............none
+2021-02-08 10:56:21.362 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : connectionTestQuery.............none
+2021-02-08 10:56:21.362 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : connectionTimeout...............30000
+2021-02-08 10:56:21.363 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : dataSource......................none
+2021-02-08 10:56:21.363 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : dataSourceClassName.............none
+2021-02-08 10:56:21.363 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI..................none
+2021-02-08 10:56:21.363 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : dataSourceProperties............{password=<masked>}
+2021-02-08 10:56:21.363 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : driverClassName................."com.mysql.cj.jdbc.Driver"
+2021-02-08 10:56:21.363 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : exceptionOverrideClassName......none
+2021-02-08 10:56:21.363 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : healthCheckProperties...........{}
+2021-02-08 10:56:21.363 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry.............none
+2021-02-08 10:56:21.363 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : idleTimeout.....................600000
+2021-02-08 10:56:21.363 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : initializationFailTimeout.......1
+2021-02-08 10:56:21.363 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries..........false
+2021-02-08 10:56:21.364 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : jdbcUrl.........................jdbc:mysql://localhost:3306/eat_that
+2021-02-08 10:56:21.364 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold..........0
+2021-02-08 10:56:21.364 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : maxLifetime.....................1800000
+2021-02-08 10:56:21.364 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : maximumPoolSize.................10
+2021-02-08 10:56:21.364 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : metricRegistry..................none
+2021-02-08 10:56:21.364 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory...........none
+2021-02-08 10:56:21.364 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : minimumIdle.....................10
+2021-02-08 10:56:21.364 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : password........................<masked>
+2021-02-08 10:56:21.364 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : poolName........................"HikariPool-2"
+2021-02-08 10:56:21.364 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : readOnly........................false
+2021-02-08 10:56:21.364 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : registerMbeans..................false
+2021-02-08 10:56:21.364 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : scheduledExecutor...............none
+2021-02-08 10:56:21.364 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : schema..........................none
+2021-02-08 10:56:21.364 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : threadFactory...................internal
+2021-02-08 10:56:21.364 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : transactionIsolation............default
+2021-02-08 10:56:21.364 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : username........................"root"
+2021-02-08 10:56:21.364 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : validationTimeout...............5000
+2021-02-08 10:56:21.365  INFO 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-02-08 10:56:21.396 DEBUG 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@718df81d
+2021-02-08 10:56:21.396  INFO 29472 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-02-08 10:56:21.398 DEBUG 29472 --- [http-nio-9095-exec-2] c.e.a.d.m.DietPlanMapper.getCategories   : ==>  Preparing: select * from diet_categories
+2021-02-08 10:56:21.408 DEBUG 29472 --- [http-nio-9095-exec-2] c.e.a.d.m.DietPlanMapper.getCategories   : ==> Parameters: 
+2021-02-08 10:56:21.420 DEBUG 29472 --- [http-nio-9095-exec-2] c.e.a.d.m.DietPlanMapper.getCategories   : <==      Total: 3
+2021-02-08 10:56:21.499 DEBUG 29472 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2021-02-08 10:56:21.526 DEBUG 29472 --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@761d8281
+2021-02-08 10:56:21.548 DEBUG 29472 --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65df815
+2021-02-08 10:56:21.565 DEBUG 29472 --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@570f77f5
+2021-02-08 10:56:21.580 DEBUG 29472 --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@519efd9b
+2021-02-08 10:56:21.599 DEBUG 29472 --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d4c9d2a
+2021-02-08 10:56:21.615 DEBUG 29472 --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@76122825
+2021-02-08 10:56:21.630 DEBUG 29472 --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@fd580eb
+2021-02-08 10:56:21.646 DEBUG 29472 --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24109af5
+2021-02-08 10:56:21.661 DEBUG 29472 --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e074649
+2021-02-08 10:56:21.661 DEBUG 29472 --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 10:56:23.089 DEBUG 29472 --- [http-nio-9095-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-02-08 10:56:23.090 DEBUG 29472 --- [http-nio-9095-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.eatThat.application.model.Response@38283b93]
+2021-02-08 10:56:23.095 DEBUG 29472 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-08 10:56:30.495 DEBUG 29472 --- [http-nio-9095-exec-2] c.e.application.util.HttpLoggingFilter   : REST Request - [HTTP METHOD:GET] [PATH INFO:/dietPlan/getCategories] [REQUEST PARAMETERS:{}] [REQUEST BODY:] [REMOTE ADDRESS:0:0:0:0:0:0:0:1] [RESPONSE:{"status":"00","message":"success","ResponseData":[{"id":1,"category":"sea"},{"id":2,"category":"continental"},{"id":3,"category":"vegetable"}]}]
+2021-02-08 10:56:51.501 DEBUG 29472 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 10:56:51.502 DEBUG 29472 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Fill pool skipped, pool is at sufficient level.

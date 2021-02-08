@@ -48,6 +48,7 @@ public class DietPlanController {
 	@RequestMapping(method = RequestMethod.GET, path = "/getCategories")
 	public Response<T> getCategories() {
 		
+		logger.debug("in categories");
 		ArrayList<FoodCategories> categories = (ArrayList<FoodCategories>) dietPlanService.getCategories();
 		
 		if (categories.size() > 0)

@@ -60,7 +60,7 @@ public class AccountController {
 	//public Response<T> login(@RequestParam String email, @RequestParam String password) {
 		
 		public Response<T> login(@RequestBody User user) {
-		
+				
 		AccountInfo info = accountService.login(user);
 		
 		
