@@ -26,7 +26,6 @@ public class AccountController {
     private static final Logger logger = LoggerFactory.getLogger(AccountController.class);
     
     
-	Response<T> response = new Response<T>();
 	@Autowired
 	EmailUtil emailUtil;
 
@@ -39,7 +38,8 @@ public class AccountController {
 
 	@RequestMapping(method = RequestMethod.POST, path = "/registerUser", consumes = "application/json")
 	public Response<T> registerUser(@RequestBody User user) {
-		
+		Response<T> response = new Response<T>();
+
 		User temp = accountService.registerUser(user);
 		if (temp.getEmail() != null) {
 			response.setData(temp);
@@ -62,7 +62,8 @@ public class AccountController {
 		public Response<T> login(@RequestBody User user) {
 				
 		AccountInfo info = accountService.login(user);
-		
+		Response<T> response = new Response<T>();
+
 		
 		if (info == AccountInfo.SUCCESS)
 		{
@@ -91,6 +92,7 @@ public class AccountController {
 		public Response<T> changePassword(@RequestBody User user) {
 		
 		boolean  forgotPasswordFlow = false;
+		Response<T> response = new Response<T>();
 
 	 AccountInfo info = accountService.changePassword(user, forgotPasswordFlow);
 	
@@ -120,7 +122,8 @@ public class AccountController {
 		
 		public Response<T> forgotPassword(@RequestBody User user) {
 		boolean  forgotPasswordFlow = true;
-		
+		Response<T> response = new Response<T>();
+
 		AccountInfo info = accountService.changePassword(user, forgotPasswordFlow);
 	
 		if (info == AccountInfo.SUCCESS)
@@ -147,7 +150,8 @@ public class AccountController {
 	
 	@RequestMapping(method = RequestMethod.POST, path = "/verifyOtp", consumes = "application/json")
 		public Response<T> verifyOtp(@RequestBody User user) {
-		
+		Response<T> response = new Response<T>();
+
 		AccountInfo info = accountService.verifyOtp(user);
 	
 		if (info == AccountInfo.OTPVERIFIED)
@@ -169,7 +173,8 @@ public class AccountController {
 	
 	@RequestMapping(method = RequestMethod.POST, path = "/updatePlan", consumes = "application/json")
 	public Response<T> updatePlan(@RequestBody User user) {
-	
+		Response<T> response = new Response<T>();
+
 	AccountInfo info = accountService.updatePlan(user);
 
 	if (info == AccountInfo.PLANUPDATED)

@@ -23,7 +23,6 @@ import com.eatThat.application.services.DietPlanService;
 public class DietPlanController {
 
 	
-	Response<T> response = new Response<T>();
 
 	@Autowired
 	DietPlanService dietPlanService;
@@ -33,6 +32,8 @@ public class DietPlanController {
 	@RequestMapping(method = RequestMethod.POST, path = "/getFoodItems", consumes = "application/json")
 	public Response<T> getFoodItems(@RequestBody FoodItem foodItems) {
 		
+		Response<T> response = new Response<T>();
+
 		ArrayList<FoodItem> items = (ArrayList<FoodItem>) dietPlanService.getAllItems(foodItems);
 		
 	//	if (items.size() > 0)
@@ -49,32 +50,34 @@ public class DietPlanController {
 	public Response<T> getCategories() {
 		
 		logger.debug("in categories");
-		Response<T> temp = new Response<T>();
+		Response<T> categoriesResponse = new Response<T>();
 
 		ArrayList<FoodCategories> categories = (ArrayList<FoodCategories>) dietPlanService.getCategories();
 		
 		if (categories.size() > 0)
 		{
-			temp.setCategories(categories);
-			temp.setMessage("success");
-			temp.setStatus("00");
+			categoriesResponse.setCategories(categories);
+			categoriesResponse.setMessage("success");
+			categoriesResponse.setStatus("00");
 			
 		}
-		return temp;
+		return categoriesResponse;
 	}
 	
 	@RequestMapping(method = RequestMethod.GET, path = "/getDietPlans")
 	public Response<T> getDietPlans() {
 		
+		Response<T> dietPlanResponse = new Response<T>();
+
 		ArrayList<DietPlans> dietPlans = (ArrayList<DietPlans>) dietPlanService.getDietPlans();
 		
 		if (dietPlans.size() > 0)
 		{
-			response.setDietPlans(dietPlans);
-			response.setMessage("success");
-			response.setStatus("00");
+			dietPlanResponse.setDietPlans(dietPlans);
+			dietPlanResponse.setMessage("success");
+			dietPlanResponse.setStatus("00");
 			
 		}
-		return response;
+		return dietPlanResponse;
 	}
 }
