@@ -328,3 +328,590 @@ java.lang.NullPointerException: Cannot invoke "org.apache.catalina.Service.getCo
 2021-02-08 10:56:30.495 DEBUG 29472 --- [http-nio-9095-exec-2] c.e.application.util.HttpLoggingFilter   : REST Request - [HTTP METHOD:GET] [PATH INFO:/dietPlan/getCategories] [REQUEST PARAMETERS:{}] [REQUEST BODY:] [REMOTE ADDRESS:0:0:0:0:0:0:0:1] [RESPONSE:{"status":"00","message":"success","ResponseData":[{"id":1,"category":"sea"},{"id":2,"category":"continental"},{"id":3,"category":"vegetable"}]}]
 2021-02-08 10:56:51.501 DEBUG 29472 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
 2021-02-08 10:56:51.502 DEBUG 29472 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:13:23.523  INFO 14052 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 14052 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
+2021-02-08 15:13:23.525 DEBUG 14052 --- [restartedMain] c.e.application.EatThatApplication       : Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2021-02-08 15:13:23.526  INFO 14052 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
+2021-02-08 15:13:23.562  INFO 14052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-08 15:13:24.721  INFO 14052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
+2021-02-08 15:13:24.728  INFO 14052 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-08 15:13:24.729  INFO 14052 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-02-08 15:13:24.806  INFO 14052 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
+2021-02-08 15:13:24.806  INFO 14052 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1244 ms
+2021-02-08 15:13:24.881 DEBUG 14052 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: someFilter urls=[/app/api/*] order=1, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, httpLoggingFilter urls=[/*] order=2147483647
+2021-02-08 15:13:24.881 DEBUG 14052 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2021-02-08 15:13:24.984 DEBUG 14052 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@20967f01
+2021-02-08 15:13:25.525 DEBUG 14052 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2021-02-08 15:13:25.618  WARN 14052 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-08 15:13:25.724  INFO 14052 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-08 15:13:25.760  INFO 14052 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-08 15:13:25.768 DEBUG 14052 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-02-08 15:13:25.792  INFO 14052 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-08 15:13:25.810 DEBUG 14052 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/, /swagger-ui/] in 'viewControllerHandlerMapping'
+2021-02-08 15:13:25.825 DEBUG 14052 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**] in 'resourceHandlerMapping'
+2021-02-08 15:13:25.833 DEBUG 14052 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-02-08 15:13:26.026  INFO 14052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path '/app/api'
+2021-02-08 15:13:26.390  INFO 14052 --- [restartedMain] c.e.application.EatThatApplication       : Started EatThatApplication in 3.129 seconds (JVM running for 3.94)
+2021-02-08 15:14:18.609  INFO 14052 --- [http-nio-9095-exec-2] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-08 15:14:18.610  INFO 14052 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-08 15:14:18.610 DEBUG 14052 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-02-08 15:14:18.626 DEBUG 14052 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2021-02-08 15:14:18.626  INFO 14052 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2021-02-08 15:14:18.636 DEBUG 14052 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/app/api/account/login", parameters={}
+2021-02-08 15:14:18.639 DEBUG 14052 --- [http-nio-9095-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eatThat.application.rest.AccountController#login(User)
+2021-02-08 15:14:18.677 DEBUG 14052 --- [http-nio-9095-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.eatThat.application.model.User@51f9af3f]
+2021-02-08 15:14:18.694 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - configuration:
+2021-02-08 15:14:18.696 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension.............false
+2021-02-08 15:14:18.696 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : autoCommit......................true
+2021-02-08 15:14:18.696 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : catalog.........................none
+2021-02-08 15:14:18.696 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : connectionInitSql...............none
+2021-02-08 15:14:18.697 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : connectionTestQuery.............none
+2021-02-08 15:14:18.697 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : connectionTimeout...............30000
+2021-02-08 15:14:18.697 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : dataSource......................none
+2021-02-08 15:14:18.697 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : dataSourceClassName.............none
+2021-02-08 15:14:18.697 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI..................none
+2021-02-08 15:14:18.697 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : dataSourceProperties............{password=<masked>}
+2021-02-08 15:14:18.697 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : driverClassName................."com.mysql.cj.jdbc.Driver"
+2021-02-08 15:14:18.697 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : exceptionOverrideClassName......none
+2021-02-08 15:14:18.697 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : healthCheckProperties...........{}
+2021-02-08 15:14:18.698 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry.............none
+2021-02-08 15:14:18.698 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : idleTimeout.....................600000
+2021-02-08 15:14:18.698 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : initializationFailTimeout.......1
+2021-02-08 15:14:18.698 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries..........false
+2021-02-08 15:14:18.698 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : jdbcUrl.........................jdbc:mysql://localhost:3306/eat_that
+2021-02-08 15:14:18.698 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold..........0
+2021-02-08 15:14:18.698 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : maxLifetime.....................1800000
+2021-02-08 15:14:18.698 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : maximumPoolSize.................10
+2021-02-08 15:14:18.698 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : metricRegistry..................none
+2021-02-08 15:14:18.698 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory...........none
+2021-02-08 15:14:18.698 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : minimumIdle.....................10
+2021-02-08 15:14:18.698 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : password........................<masked>
+2021-02-08 15:14:18.698 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : poolName........................"HikariPool-1"
+2021-02-08 15:14:18.698 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : readOnly........................false
+2021-02-08 15:14:18.698 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : registerMbeans..................false
+2021-02-08 15:14:18.698 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : scheduledExecutor...............none
+2021-02-08 15:14:18.699 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : schema..........................none
+2021-02-08 15:14:18.699 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : threadFactory...................internal
+2021-02-08 15:14:18.699 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : transactionIsolation............default
+2021-02-08 15:14:18.699 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : username........................"root"
+2021-02-08 15:14:18.699 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : validationTimeout...............5000
+2021-02-08 15:14:18.699  INFO 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-08 15:14:18.989 DEBUG 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@462be38f
+2021-02-08 15:14:18.990  INFO 14052 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-08 15:14:18.995 DEBUG 14052 --- [http-nio-9095-exec-2] c.e.a.dao.mapper.UserMapper.Login        : ==>  Preparing: select usr.*, pl.plan_name from users usr JOIN diet_plans pl on usr.diet_plan_id = pl.id AND usr.email=? AND usr.password=? limit 1
+2021-02-08 15:14:19.015 DEBUG 14052 --- [http-nio-9095-exec-2] c.e.a.dao.mapper.UserMapper.Login        : ==> Parameters: danish935@yahoo.com(String), 392149(String)
+2021-02-08 15:14:19.042 DEBUG 14052 --- [http-nio-9095-exec-2] c.e.a.dao.mapper.UserMapper.Login        : <==      Total: 0
+2021-02-08 15:14:19.054 DEBUG 14052 --- [http-nio-9095-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-02-08 15:14:19.055 DEBUG 14052 --- [http-nio-9095-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.eatThat.application.model.Response@4a92809a]
+2021-02-08 15:14:19.064 DEBUG 14052 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-08 15:14:19.065 DEBUG 14052 --- [http-nio-9095-exec-2] c.e.application.util.HttpLoggingFilter   : REST Request - [HTTP METHOD:POST] [PATH INFO:/account/login] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"email": "danish935@yahoo.com","password": "392149"}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1] [RESPONSE:{"status":"01","message":"Invalid username/password","ResponseData":{"firstName":null,"lastName":null,"email":null,"deleted":0,"active":0,"registrationOtp":null,"createDate":null,"modifiedDate":null,"planName":null,"dietPlanId":1,"id":0}}]
+2021-02-08 15:14:19.091 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2021-02-08 15:14:19.111 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52e96d7d
+2021-02-08 15:14:19.129 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ef5656
+2021-02-08 15:14:19.147 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@16f0c1e3
+2021-02-08 15:14:19.172 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a1a910
+2021-02-08 15:14:19.191 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@464b261b
+2021-02-08 15:14:19.208 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a109f98
+2021-02-08 15:14:19.231 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c0bd3f5
+2021-02-08 15:14:19.247 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5795a8bc
+2021-02-08 15:14:19.264 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@142f42d8
+2021-02-08 15:14:19.264 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:14:49.092 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:14:49.092 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:15:13.529 DEBUG 14052 --- [http-nio-9095-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/app/api/account/registerUser", parameters={}
+2021-02-08 15:15:13.530 DEBUG 14052 --- [http-nio-9095-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eatThat.application.rest.AccountController#registerUser(User)
+2021-02-08 15:15:13.530 DEBUG 14052 --- [http-nio-9095-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.eatThat.application.model.User@22a57de6]
+2021-02-08 15:15:13.531 DEBUG 14052 --- [http-nio-9095-exec-3] c.e.a.d.m.UserMapper.getUserbyEmail      : ==>  Preparing: select * from users where email=? and deleted=0 limit 1
+2021-02-08 15:15:13.532 DEBUG 14052 --- [http-nio-9095-exec-3] c.e.a.d.m.UserMapper.getUserbyEmail      : ==> Parameters: danish935@yahoo.com(String)
+2021-02-08 15:15:13.535 DEBUG 14052 --- [http-nio-9095-exec-3] c.e.a.d.m.UserMapper.getUserbyEmail      : <==      Total: 1
+2021-02-08 15:15:13.536 DEBUG 14052 --- [http-nio-9095-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-02-08 15:15:13.536 DEBUG 14052 --- [http-nio-9095-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.eatThat.application.model.Response@4a92809a]
+2021-02-08 15:15:13.537 DEBUG 14052 --- [http-nio-9095-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-08 15:15:13.537 DEBUG 14052 --- [http-nio-9095-exec-3] c.e.application.util.HttpLoggingFilter   : REST Request - [HTTP METHOD:POST] [PATH INFO:/account/registerUser] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"firstName": "muhammad","lastName": "danish","email" : "danish935@yahoo.com","password": "1111"}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1] [RESPONSE:{"status":"01","message":"User Register Failed","ResponseData":{"firstName":null,"lastName":null,"email":null,"deleted":0,"active":0,"registrationOtp":null,"createDate":null,"modifiedDate":null,"planName":null,"dietPlanId":1,"id":0}}]
+2021-02-08 15:15:19.094 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:15:19.094 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:15:36.175 DEBUG 14052 --- [http-nio-9095-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/app/api/dietPlan/getCategories", parameters={}
+2021-02-08 15:15:36.175 DEBUG 14052 --- [http-nio-9095-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eatThat.application.rest.DietPlanController#getCategories()
+2021-02-08 15:15:36.175 DEBUG 14052 --- [http-nio-9095-exec-4] c.e.application.rest.AccountController   : in categories
+2021-02-08 15:15:36.176 DEBUG 14052 --- [http-nio-9095-exec-4] c.e.a.d.m.DietPlanMapper.getCategories   : ==>  Preparing: select * from diet_categories
+2021-02-08 15:15:36.176 DEBUG 14052 --- [http-nio-9095-exec-4] c.e.a.d.m.DietPlanMapper.getCategories   : ==> Parameters: 
+2021-02-08 15:15:36.179 DEBUG 14052 --- [http-nio-9095-exec-4] c.e.a.d.m.DietPlanMapper.getCategories   : <==      Total: 3
+2021-02-08 15:15:36.179 DEBUG 14052 --- [http-nio-9095-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-02-08 15:15:36.179 DEBUG 14052 --- [http-nio-9095-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.eatThat.application.model.Response@231660ac]
+2021-02-08 15:15:36.182 DEBUG 14052 --- [http-nio-9095-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-08 15:15:36.182 DEBUG 14052 --- [http-nio-9095-exec-4] c.e.application.util.HttpLoggingFilter   : REST Request - [HTTP METHOD:GET] [PATH INFO:/dietPlan/getCategories] [REQUEST PARAMETERS:{}] [REQUEST BODY:] [REMOTE ADDRESS:0:0:0:0:0:0:0:1] [RESPONSE:{"status":"00","message":"success","ResponseData":[{"id":1,"category":"sea"},{"id":2,"category":"continental"},{"id":3,"category":"vegetable"}]}]
+2021-02-08 15:15:49.095 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:15:49.095 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:15:50.808 DEBUG 14052 --- [http-nio-9095-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/app/api/account/forgotPassword", parameters={}
+2021-02-08 15:15:50.809 DEBUG 14052 --- [http-nio-9095-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eatThat.application.rest.AccountController#forgotPassword(User)
+2021-02-08 15:15:50.809 DEBUG 14052 --- [http-nio-9095-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.eatThat.application.model.User@5df0468e]
+2021-02-08 15:15:50.810 DEBUG 14052 --- [http-nio-9095-exec-5] c.e.a.d.m.UserMapper.getUserbyEmail      : ==>  Preparing: select * from users where email=? and deleted=0 limit 1
+2021-02-08 15:15:50.810 DEBUG 14052 --- [http-nio-9095-exec-5] c.e.a.d.m.UserMapper.getUserbyEmail      : ==> Parameters: danish935@yahoo.com(String)
+2021-02-08 15:15:50.812 DEBUG 14052 --- [http-nio-9095-exec-5] c.e.a.d.m.UserMapper.getUserbyEmail      : <==      Total: 1
+2021-02-08 15:15:50.812 DEBUG 14052 --- [http-nio-9095-exec-5] c.e.a.d.m.UserMapper.changePassword      : ==>  Preparing: update users set password=? where email=? AND deleted=0 and active=1
+2021-02-08 15:15:50.812 DEBUG 14052 --- [http-nio-9095-exec-5] c.e.a.d.m.UserMapper.changePassword      : ==> Parameters: 934446(String), danish935@yahoo.com(String)
+2021-02-08 15:15:50.841 DEBUG 14052 --- [http-nio-9095-exec-5] c.e.a.d.m.UserMapper.changePassword      : <==    Updates: 1
+2021-02-08 15:15:50.875 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : useEhlo true, useAuth true
+2021-02-08 15:15:50.876 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : trying to connect to host "smtp.gmail.com", port 587, isSSL false
+2021-02-08 15:15:52.240 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : connected to host "smtp.gmail.com", port: 587
+2021-02-08 15:15:52.440 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : Found extension "SIZE", arg "35882577"
+2021-02-08 15:15:52.441 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : Found extension "8BITMIME", arg ""
+2021-02-08 15:15:52.441 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : Found extension "STARTTLS", arg ""
+2021-02-08 15:15:52.441 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : Found extension "ENHANCEDSTATUSCODES", arg ""
+2021-02-08 15:15:52.441 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : Found extension "PIPELINING", arg ""
+2021-02-08 15:15:52.441 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : Found extension "CHUNKING", arg ""
+2021-02-08 15:15:52.441 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : Found extension "SMTPUTF8", arg ""
+2021-02-08 15:15:53.156 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : Found extension "SIZE", arg "35882577"
+2021-02-08 15:15:53.156 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : Found extension "8BITMIME", arg ""
+2021-02-08 15:15:53.156 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : Found extension "AUTH", arg "LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH"
+2021-02-08 15:15:53.156 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : Found extension "ENHANCEDSTATUSCODES", arg ""
+2021-02-08 15:15:53.156 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : Found extension "PIPELINING", arg ""
+2021-02-08 15:15:53.157 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : Found extension "CHUNKING", arg ""
+2021-02-08 15:15:53.157 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : Found extension "SMTPUTF8", arg ""
+2021-02-08 15:15:53.157 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : protocolConnect login, host=smtp.gmail.com, user=eatthatface44@gmail.com, password=<non-null>
+2021-02-08 15:15:53.157 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM XOAUTH2 
+2021-02-08 15:15:53.157 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : Using mechanism LOGIN
+2021-02-08 15:15:53.721 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : use8bit false
+2021-02-08 15:15:54.010 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : Verified Addresses
+2021-02-08 15:15:54.010 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        :   danish935@yahoo.com
+2021-02-08 15:15:55.324 DEBUG 14052 --- [http-nio-9095-exec-5] com.sun.mail.smtp                        : message successfully delivered to mail server
+2021-02-08 15:15:55.467 DEBUG 14052 --- [http-nio-9095-exec-5] c.e.a.d.m.UserMapper.changePassword      : ==>  Preparing: update users set password=? where email=? AND deleted=0 and active=1
+2021-02-08 15:15:55.467 DEBUG 14052 --- [http-nio-9095-exec-5] c.e.a.d.m.UserMapper.changePassword      : ==> Parameters: 934446(String), danish935@yahoo.com(String)
+2021-02-08 15:15:55.468 DEBUG 14052 --- [http-nio-9095-exec-5] c.e.a.d.m.UserMapper.changePassword      : <==    Updates: 1
+2021-02-08 15:15:55.469 DEBUG 14052 --- [http-nio-9095-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-02-08 15:15:55.469 DEBUG 14052 --- [http-nio-9095-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.eatThat.application.model.Response@4a92809a]
+2021-02-08 15:15:55.469 DEBUG 14052 --- [http-nio-9095-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-08 15:15:55.470 DEBUG 14052 --- [http-nio-9095-exec-5] c.e.application.util.HttpLoggingFilter   : REST Request - [HTTP METHOD:POST] [PATH INFO:/account/forgotPassword] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"email": "danish935@yahoo.com"}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1] [RESPONSE:{"status":"00","message":"Please find details in eamil to proceed further.","ResponseData":null}]
+2021-02-08 15:16:19.097 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:16:19.097 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:16:23.906 DEBUG 14052 --- [http-nio-9095-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/app/api/account/verifyOtp", parameters={}
+2021-02-08 15:16:23.907 DEBUG 14052 --- [http-nio-9095-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eatThat.application.rest.AccountController#verifyOtp(User)
+2021-02-08 15:16:23.907 DEBUG 14052 --- [http-nio-9095-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.eatThat.application.model.User@17701f76]
+2021-02-08 15:16:23.908 DEBUG 14052 --- [http-nio-9095-exec-6] c.e.a.d.m.UserMapper.getUserbyEmail      : ==>  Preparing: select * from users where email=? and deleted=0 limit 1
+2021-02-08 15:16:23.908 DEBUG 14052 --- [http-nio-9095-exec-6] c.e.a.d.m.UserMapper.getUserbyEmail      : ==> Parameters: danish935@yahoo.com(String)
+2021-02-08 15:16:23.910 DEBUG 14052 --- [http-nio-9095-exec-6] c.e.a.d.m.UserMapper.getUserbyEmail      : <==      Total: 1
+2021-02-08 15:16:23.911 DEBUG 14052 --- [http-nio-9095-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-02-08 15:16:23.911 DEBUG 14052 --- [http-nio-9095-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.eatThat.application.model.Response@4a92809a]
+2021-02-08 15:16:23.912 DEBUG 14052 --- [http-nio-9095-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-08 15:16:23.912 DEBUG 14052 --- [http-nio-9095-exec-6] c.e.application.util.HttpLoggingFilter   : REST Request - [HTTP METHOD:POST] [PATH INFO:/account/verifyOtp] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"email": "danish935@yahoo.com","registrationOtp":"996014"}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1] [RESPONSE:{"status":"01","message":"Account activation fail. Please try again","ResponseData":null}]
+2021-02-08 15:16:36.248 DEBUG 14052 --- [http-nio-9095-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/app/api/account/updatePlan", parameters={}
+2021-02-08 15:16:36.249 DEBUG 14052 --- [http-nio-9095-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eatThat.application.rest.AccountController#updatePlan(User)
+2021-02-08 15:16:36.250 DEBUG 14052 --- [http-nio-9095-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.eatThat.application.model.User@22f7c1c6]
+2021-02-08 15:16:36.252 DEBUG 14052 --- [http-nio-9095-exec-7] c.e.a.d.m.UserMapper.getUserbyEmail      : ==>  Preparing: select * from users where email=? and deleted=0 limit 1
+2021-02-08 15:16:36.252 DEBUG 14052 --- [http-nio-9095-exec-7] c.e.a.d.m.UserMapper.getUserbyEmail      : ==> Parameters: danish935@yahoo.com(String)
+2021-02-08 15:16:36.254 DEBUG 14052 --- [http-nio-9095-exec-7] c.e.a.d.m.UserMapper.getUserbyEmail      : <==      Total: 1
+2021-02-08 15:16:36.255 DEBUG 14052 --- [http-nio-9095-exec-7] c.e.a.dao.mapper.UserMapper.updatePlan   : ==>  Preparing: update users set diet_plan_id=? where email=?
+2021-02-08 15:16:36.255 DEBUG 14052 --- [http-nio-9095-exec-7] c.e.a.dao.mapper.UserMapper.updatePlan   : ==> Parameters: 2(Integer), danish935@yahoo.com(String)
+2021-02-08 15:16:36.257 DEBUG 14052 --- [http-nio-9095-exec-7] c.e.a.dao.mapper.UserMapper.updatePlan   : <==    Updates: 1
+2021-02-08 15:16:36.258 DEBUG 14052 --- [http-nio-9095-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-02-08 15:16:36.258 DEBUG 14052 --- [http-nio-9095-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.eatThat.application.model.Response@4a92809a]
+2021-02-08 15:16:36.260 DEBUG 14052 --- [http-nio-9095-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-08 15:16:36.260 DEBUG 14052 --- [http-nio-9095-exec-7] c.e.application.util.HttpLoggingFilter   : REST Request - [HTTP METHOD:POST] [PATH INFO:/account/updatePlan] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"email": "danish935@yahoo.com","dietPlanId": "2"}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1] [RESPONSE:{"status":"00","message":"Diet Plan updated successfully.","ResponseData":null}]
+2021-02-08 15:16:49.098 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:16:49.098 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:17:19.099 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:17:19.099 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:17:45.107 DEBUG 14052 --- [http-nio-9095-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/app/api/dietPlan/getFoodItems", parameters={}
+2021-02-08 15:17:45.107 DEBUG 14052 --- [http-nio-9095-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eatThat.application.rest.DietPlanController#getFoodItems(FoodItem)
+2021-02-08 15:17:45.110 DEBUG 14052 --- [http-nio-9095-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.eatThat.application.model.FoodItem@2d4d86e8]
+2021-02-08 15:17:45.111 DEBUG 14052 --- [http-nio-9095-exec-10] c.e.a.d.m.D.getAllItemsBySearchKey       : ==>  Preparing: select fi.*, dl.plan_name, cat.category_name from food_items fi join diet_plans dl on fi.diet_plan_id = dl.id join diet_categories cat on fi.category_id = cat.id AND dl.id =? and fi.name LIKE '%' ? '%';
+2021-02-08 15:17:45.112 DEBUG 14052 --- [http-nio-9095-exec-10] c.e.a.d.m.D.getAllItemsBySearchKey       : ==> Parameters: 1(Integer), cheese(String)
+2021-02-08 15:17:45.126 DEBUG 14052 --- [http-nio-9095-exec-10] c.e.a.d.m.D.getAllItemsBySearchKey       : <==      Total: 1
+2021-02-08 15:17:45.127 DEBUG 14052 --- [http-nio-9095-exec-10] c.e.a.d.m.D.getNutritionInfo             : ==>  Preparing: select * from food_nutritions_info where food_items_id=? OR name=?
+2021-02-08 15:17:45.128 DEBUG 14052 --- [http-nio-9095-exec-10] c.e.a.d.m.D.getNutritionInfo             : ==> Parameters: 5(Integer), Cheese(String)
+2021-02-08 15:17:45.133 DEBUG 14052 --- [http-nio-9095-exec-10] c.e.a.d.m.D.getNutritionInfo             : <==      Total: 10
+2021-02-08 15:17:45.134 DEBUG 14052 --- [http-nio-9095-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-02-08 15:17:45.134 DEBUG 14052 --- [http-nio-9095-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.eatThat.application.model.Response@231660ac]
+2021-02-08 15:17:45.136 DEBUG 14052 --- [http-nio-9095-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-08 15:17:45.136 DEBUG 14052 --- [http-nio-9095-exec-10] c.e.application.util.HttpLoggingFilter   : REST Request - [HTTP METHOD:POST] [PATH INFO:/dietPlan/getFoodItems] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"dietPlanId": "1","searchKey": "cheese"}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1] [RESPONSE:{"status":"00","message":"success","ResponseData":[{"id":5,"name":"Cheese","servingSize":"One Portion","servingWeight":"350g","categoryId":1,"dietPlanId":1,"planName":"Keto?","categoryName":"sea","nutritionInfo":[{"nutrition":"Trans Fats","weight":"0.0g"},{"nutrition":"Calcium","weight":"24%"},{"nutrition":"Cholestrol","weight":"0mg"},{"nutrition":"Sodium ","weight":"22mg"},{"nutrition":"Protien","weight":"0.3g"},{"nutrition":"Calories ","weight":"52"},{"nutrition":"Saturated Fat ","weight":"2g"},{"nutrition":"Carbohydes","weight":"7.2g"},{"nutrition":"Vitamin A","weight":"6%"},{"nutrition":"Potassium","weight":"112mg"}]}]}]
+2021-02-08 15:17:49.100 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:17:49.100 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:18:19.101 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:18:19.101 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:18:49.103 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:18:49.103 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:19:19.104 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:19:19.104 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:19:49.105 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:19:49.105 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:20:19.107 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:20:19.107 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:20:49.109 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:20:49.109 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:21:19.110 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:21:19.110 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:21:49.111 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:21:49.111 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:22:19.113 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:22:19.113 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:22:49.114 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:22:49.114 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:23:19.115 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:23:19.115 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:23:49.115 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:23:49.115 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:24:19.116 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:24:19.116 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:24:49.117 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:24:49.117 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:25:19.118 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:25:19.118 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:25:49.120 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:25:49.120 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:26:19.121 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:26:19.121 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:26:49.123 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:26:49.123 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:27:19.124 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:27:19.124 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:27:49.125 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:27:49.125 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:28:19.126 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:28:19.126 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:28:49.128 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:28:49.128 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:29:19.130 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:29:19.130 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:29:49.130 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:29:49.130 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:30:19.132 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:30:19.132 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:30:49.133 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:30:49.133 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:31:19.134 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:31:19.134 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:31:49.135 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:31:49.135 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:32:19.137 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:32:19.137 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:32:49.139 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:32:49.139 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:33:19.145 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:33:19.145 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:33:49.152 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:33:49.152 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:34:19.159 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:34:19.159 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:34:49.166 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:34:49.166 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:35:19.172 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:35:19.172 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:35:49.180 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:35:49.180 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:36:19.186 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:36:19.186 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:36:49.193 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:36:49.193 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:37:19.199 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:37:19.199 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:37:49.206 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:37:49.206 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:38:19.207 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:38:19.207 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:38:49.209 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:38:49.209 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:39:19.211 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:39:19.211 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:39:49.212 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:39:49.212 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:40:19.214 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:40:19.214 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:40:49.216 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:40:49.216 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:41:19.217 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:41:19.217 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:41:49.218 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:41:49.218 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:42:19.219 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:42:19.219 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:42:49.219 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:42:49.219 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:43:19.220 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:43:19.220 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:43:41.342 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@52e96d7d: (connection has passed maxLifetime)
+2021-02-08 15:43:41.374 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@597a360a
+2021-02-08 15:43:47.905 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5795a8bc: (connection has passed maxLifetime)
+2021-02-08 15:43:47.925 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@fda292c
+2021-02-08 15:43:49.221 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:43:49.221 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:43:49.557 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@142f42d8: (connection has passed maxLifetime)
+2021-02-08 15:43:49.572 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ff5d663
+2021-02-08 15:43:50.191 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@462be38f: (connection has passed maxLifetime)
+2021-02-08 15:43:50.205 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ba4b012
+2021-02-08 15:43:51.266 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5c0bd3f5: (connection has passed maxLifetime)
+2021-02-08 15:43:51.287 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d7c555e
+2021-02-08 15:43:53.431 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7a1a910: (connection has passed maxLifetime)
+2021-02-08 15:43:53.448 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d02694c
+2021-02-08 15:43:53.966 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@16f0c1e3: (connection has passed maxLifetime)
+2021-02-08 15:43:53.978 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19e241a4
+2021-02-08 15:43:54.156 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@464b261b: (connection has passed maxLifetime)
+2021-02-08 15:43:54.169 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7baf1a5c
+2021-02-08 15:44:06.481 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1a109f98: (connection has passed maxLifetime)
+2021-02-08 15:44:06.499 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34cc2571
+2021-02-08 15:44:16.919 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3ef5656: (connection has passed maxLifetime)
+2021-02-08 15:44:16.933 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@334cc17
+2021-02-08 15:44:19.223 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:44:19.223 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:44:49.223 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:44:49.223 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:45:19.224 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:45:19.224 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:45:49.225 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:45:49.225 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:46:19.226 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:46:19.226 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:46:49.228 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:46:49.228 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:47:19.228 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:47:19.228 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:47:49.229 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:47:49.229 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:48:19.231 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:48:19.232 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:48:49.232 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:48:49.232 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:49:19.234 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:49:19.234 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:49:49.236 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:49:49.236 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:50:19.236 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:50:19.236 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:50:49.237 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:50:49.237 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:51:19.237 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:51:19.237 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:51:49.238 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:51:49.238 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:52:19.238 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:52:19.238 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:52:49.239 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:52:49.239 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:53:19.241 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:53:19.241 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:53:49.242 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:53:49.242 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:54:19.243 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:54:19.243 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:54:49.244 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:54:49.244 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:55:19.245 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:55:19.245 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 15:55:49.246 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 15:55:49.246 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 16:23:52.071  WARN 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=28m2s864ms586µs100ns).
+2021-02-08 16:23:52.072 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 16:23:52.072 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 16:23:52.073 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Add connection elided, waiting 0, queue 1
+2021-02-08 16:23:52.073 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Add connection elided, waiting 0, queue 1
+2021-02-08 16:23:52.073 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Add connection elided, waiting 0, queue 1
+2021-02-08 16:23:52.073 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Add connection elided, waiting 0, queue 1
+2021-02-08 16:23:52.074 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Add connection elided, waiting 0, queue 1
+2021-02-08 16:23:52.074 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Add connection elided, waiting 0, queue 1
+2021-02-08 16:23:52.074 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Add connection elided, waiting 0, queue 1
+2021-02-08 16:23:52.074 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Add connection elided, waiting 0, queue 1
+2021-02-08 16:23:52.075 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6ff5d663: (connection has passed maxLifetime)
+2021-02-08 16:23:52.076 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@19e241a4: (connection has passed maxLifetime)
+2021-02-08 16:23:52.077 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 16:23:52.078 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7d02694c: (connection has passed maxLifetime)
+2021-02-08 16:23:52.080 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 16:23:52.080 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@597a360a: (connection has passed maxLifetime)
+2021-02-08 16:23:52.081 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 16:23:52.081 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@34cc2571: (connection has passed maxLifetime)
+2021-02-08 16:23:52.082 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 16:23:52.082 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7baf1a5c: (connection has passed maxLifetime)
+2021-02-08 16:23:52.082 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 16:23:52.082 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4d7c555e: (connection has passed maxLifetime)
+2021-02-08 16:23:52.083 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 16:23:52.083 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@fda292c: (connection has passed maxLifetime)
+2021-02-08 16:23:52.084 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 16:23:52.084 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5ba4b012: (connection has passed maxLifetime)
+2021-02-08 16:23:52.085 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 16:23:52.085 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@334cc17: (connection has passed maxLifetime)
+2021-02-08 16:23:52.086 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 16:23:52.105 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a1a1bb8
+2021-02-08 16:23:52.129 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b271183
+2021-02-08 16:23:52.156 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ac6faa1
+2021-02-08 16:23:52.584 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b08eecc
+2021-02-08 16:23:52.603 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19e4f76a
+2021-02-08 16:23:52.621 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f46d165
+2021-02-08 16:23:52.651 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@151cea8d
+2021-02-08 16:23:52.677 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@eb41d32
+2021-02-08 16:23:52.693 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f89e48d
+2021-02-08 16:23:52.707 DEBUG 14052 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67365762
+2021-02-08 16:24:22.073 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 16:24:22.073 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 16:24:52.073 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 16:24:52.073 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 16:25:22.074 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 16:25:22.074 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 16:25:52.075 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 16:25:52.075 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 16:26:22.077 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 16:26:22.077 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 16:26:52.079 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 16:26:52.079 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 16:27:22.080 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 16:27:22.080 DEBUG 14052 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 16:27:29.710  INFO 14052 --- [RMI TCP Connection(52)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-02-08 16:27:29.789  INFO 14052 --- [RMI TCP Connection(52)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-08 16:27:29.791  INFO 14052 --- [RMI TCP Connection(52)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-08 16:27:29.792 DEBUG 14052 --- [RMI TCP Connection(52)-127.0.0.1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 16:27:29.793 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6a1a1bb8: (connection evicted)
+2021-02-08 16:27:29.794 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2b271183: (connection evicted)
+2021-02-08 16:27:29.794 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1ac6faa1: (connection evicted)
+2021-02-08 16:27:29.794 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4b08eecc: (connection evicted)
+2021-02-08 16:27:29.795 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@19e4f76a: (connection evicted)
+2021-02-08 16:27:29.795 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4f46d165: (connection evicted)
+2021-02-08 16:27:29.796 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@151cea8d: (connection evicted)
+2021-02-08 16:27:29.796 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@eb41d32: (connection evicted)
+2021-02-08 16:27:29.797 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3f89e48d: (connection evicted)
+2021-02-08 16:27:29.798 DEBUG 14052 --- [HikariPool-1 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@67365762: (connection evicted)
+2021-02-08 16:27:29.798 DEBUG 14052 --- [RMI TCP Connection(52)-127.0.0.1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2021-02-08 16:27:29.798  INFO 14052 --- [RMI TCP Connection(52)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-08 16:27:54.921  INFO 23248 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 23248 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
+2021-02-08 16:27:54.923  INFO 23248 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
+2021-02-08 16:27:54.955  INFO 23248 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-08 16:27:56.031  INFO 23248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
+2021-02-08 16:27:56.039  INFO 23248 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-08 16:27:56.039  INFO 23248 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-02-08 16:27:56.114  INFO 23248 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
+2021-02-08 16:27:56.115  INFO 23248 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1159 ms
+2021-02-08 16:27:56.190 DEBUG 23248 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: someFilter urls=[/app/api/*] order=1, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, httpLoggingFilter urls=[/*] order=2147483647
+2021-02-08 16:27:56.190 DEBUG 23248 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2021-02-08 16:27:56.842 DEBUG 23248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2021-02-08 16:27:56.943  WARN 23248 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-08 16:27:57.035  INFO 23248 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-08 16:27:57.073  INFO 23248 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-08 16:27:57.080 DEBUG 23248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-02-08 16:27:57.098  INFO 23248 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-08 16:27:57.111 DEBUG 23248 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/, /swagger-ui/] in 'viewControllerHandlerMapping'
+2021-02-08 16:27:57.128 DEBUG 23248 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**] in 'resourceHandlerMapping'
+2021-02-08 16:27:57.137 DEBUG 23248 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-02-08 16:27:57.322  INFO 23248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path '/app/api'
+2021-02-08 16:27:57.669  INFO 23248 --- [restartedMain] c.e.application.EatThatApplication       : Started EatThatApplication in 2.993 seconds (JVM running for 3.654)
+2021-02-08 16:28:04.808  INFO 23248 --- [http-nio-9095-exec-2] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-08 16:28:04.809  INFO 23248 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-08 16:28:04.809 DEBUG 23248 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-02-08 16:28:04.826 DEBUG 23248 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2021-02-08 16:28:04.826  INFO 23248 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2021-02-08 16:28:04.836 DEBUG 23248 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/app/api/account/registerUser", parameters={}
+2021-02-08 16:28:04.841 DEBUG 23248 --- [http-nio-9095-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eatThat.application.rest.AccountController#registerUser(User)
+2021-02-08 16:28:04.878 DEBUG 23248 --- [http-nio-9095-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.eatThat.application.model.User@47dbd7ae]
+2021-02-08 16:28:04.892  INFO 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-08 16:28:05.154  INFO 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-08 16:28:05.206 DEBUG 23248 --- [http-nio-9095-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-02-08 16:28:05.207 DEBUG 23248 --- [http-nio-9095-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.eatThat.application.model.Response@24a5264d]
+2021-02-08 16:28:05.216 DEBUG 23248 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-08 16:28:20.394 DEBUG 23248 --- [http-nio-9095-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/app/api/account/verifyOtp", parameters={}
+2021-02-08 16:28:20.395 DEBUG 23248 --- [http-nio-9095-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eatThat.application.rest.AccountController#verifyOtp(User)
+2021-02-08 16:28:20.396 DEBUG 23248 --- [http-nio-9095-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.eatThat.application.model.User@367bcb0a]
+2021-02-08 16:28:20.400 DEBUG 23248 --- [http-nio-9095-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-02-08 16:28:20.400 DEBUG 23248 --- [http-nio-9095-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.eatThat.application.model.Response@24a5264d]
+2021-02-08 16:28:20.402 DEBUG 23248 --- [http-nio-9095-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-08 16:28:45.021  INFO 23248 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-08 16:28:45.023  INFO 23248 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-08 16:28:45.031  INFO 23248 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-08 16:28:45.089  INFO 23248 --- [restartedMain] c.e.application.EatThatApplication       : Starting EatThatApplication on NISBDFS128943-B with PID 23248 (D:\Work\eatThat\bin\main started by muhammad.danish3 in D:\Work\eatThat)
+2021-02-08 16:28:45.090 DEBUG 23248 --- [restartedMain] c.e.application.EatThatApplication       : Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2021-02-08 16:28:45.090  INFO 23248 --- [restartedMain] c.e.application.EatThatApplication       : The following profiles are active: local
+2021-02-08 16:28:45.406  INFO 23248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
+2021-02-08 16:28:45.407  INFO 23248 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-08 16:28:45.407  INFO 23248 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-02-08 16:28:45.427  INFO 23248 --- [restartedMain] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring embedded WebApplicationContext
+2021-02-08 16:28:45.427  INFO 23248 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 336 ms
+2021-02-08 16:28:45.442 DEBUG 23248 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: someFilter urls=[/app/api/*] order=1, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, httpLoggingFilter urls=[/*] order=2147483647
+2021-02-08 16:28:45.442 DEBUG 23248 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2021-02-08 16:28:45.464 DEBUG 23248 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@104b0e61
+2021-02-08 16:28:45.576 DEBUG 23248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2021-02-08 16:28:45.602  WARN 23248 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-08 16:28:45.616  INFO 23248 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-08 16:28:45.621  INFO 23248 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-08 16:28:45.624 DEBUG 23248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-02-08 16:28:45.627  INFO 23248 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-08 16:28:45.631 DEBUG 23248 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/, /swagger-ui/] in 'viewControllerHandlerMapping'
+2021-02-08 16:28:45.634 DEBUG 23248 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**] in 'resourceHandlerMapping'
+2021-02-08 16:28:45.638 DEBUG 23248 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-02-08 16:28:45.684  INFO 23248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path '/app/api'
+2021-02-08 16:28:45.739  INFO 23248 --- [restartedMain] c.e.application.EatThatApplication       : Started EatThatApplication in 0.67 seconds (JVM running for 51.725)
+2021-02-08 16:28:45.741  INFO 23248 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-02-08 16:28:47.862  INFO 23248 --- [http-nio-9095-exec-2] o.a.c.c.C.[.[localhost].[/app/api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-08 16:28:47.862  INFO 23248 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-08 16:28:47.862 DEBUG 23248 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-02-08 16:28:47.864 DEBUG 23248 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2021-02-08 16:28:47.864  INFO 23248 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-02-08 16:28:47.867 DEBUG 23248 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/app/api/account/verifyOtp", parameters={}
+2021-02-08 16:28:47.868 DEBUG 23248 --- [http-nio-9095-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eatThat.application.rest.AccountController#verifyOtp(User)
+2021-02-08 16:28:47.870 DEBUG 23248 --- [http-nio-9095-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.eatThat.application.model.User@426c9891]
+2021-02-08 16:28:47.870 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : HikariPool-2 - configuration:
+2021-02-08 16:28:47.871 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension.............false
+2021-02-08 16:28:47.871 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : autoCommit......................true
+2021-02-08 16:28:47.871 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : catalog.........................none
+2021-02-08 16:28:47.871 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : connectionInitSql...............none
+2021-02-08 16:28:47.871 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : connectionTestQuery.............none
+2021-02-08 16:28:47.871 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : connectionTimeout...............30000
+2021-02-08 16:28:47.871 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : dataSource......................none
+2021-02-08 16:28:47.871 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : dataSourceClassName.............none
+2021-02-08 16:28:47.871 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI..................none
+2021-02-08 16:28:47.871 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : dataSourceProperties............{password=<masked>}
+2021-02-08 16:28:47.872 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : driverClassName................."com.mysql.cj.jdbc.Driver"
+2021-02-08 16:28:47.872 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : exceptionOverrideClassName......none
+2021-02-08 16:28:47.872 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : healthCheckProperties...........{}
+2021-02-08 16:28:47.872 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry.............none
+2021-02-08 16:28:47.872 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : idleTimeout.....................600000
+2021-02-08 16:28:47.872 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : initializationFailTimeout.......1
+2021-02-08 16:28:47.872 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries..........false
+2021-02-08 16:28:47.872 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : jdbcUrl.........................jdbc:mysql://localhost:3306/eat_that
+2021-02-08 16:28:47.872 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold..........0
+2021-02-08 16:28:47.872 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : maxLifetime.....................1800000
+2021-02-08 16:28:47.872 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : maximumPoolSize.................10
+2021-02-08 16:28:47.872 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : metricRegistry..................none
+2021-02-08 16:28:47.872 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory...........none
+2021-02-08 16:28:47.872 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : minimumIdle.....................10
+2021-02-08 16:28:47.872 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : password........................<masked>
+2021-02-08 16:28:47.873 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : poolName........................"HikariPool-2"
+2021-02-08 16:28:47.873 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : readOnly........................false
+2021-02-08 16:28:47.873 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : registerMbeans..................false
+2021-02-08 16:28:47.873 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : scheduledExecutor...............none
+2021-02-08 16:28:47.873 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : schema..........................none
+2021-02-08 16:28:47.873 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : threadFactory...................internal
+2021-02-08 16:28:47.873 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : transactionIsolation............default
+2021-02-08 16:28:47.873 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : username........................"root"
+2021-02-08 16:28:47.873 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariConfig           : validationTimeout...............5000
+2021-02-08 16:28:47.873  INFO 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-02-08 16:28:47.894 DEBUG 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6fa63ccd
+2021-02-08 16:28:47.895  INFO 23248 --- [http-nio-9095-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-02-08 16:28:47.896 DEBUG 23248 --- [http-nio-9095-exec-2] c.e.a.d.m.UserMapper.getUserbyEmail      : ==>  Preparing: select * from users where email=? and deleted=0 limit 1
+2021-02-08 16:28:47.905 DEBUG 23248 --- [http-nio-9095-exec-2] c.e.a.d.m.UserMapper.getUserbyEmail      : ==> Parameters: danish935@yahoo.com(String)
+2021-02-08 16:28:47.915 DEBUG 23248 --- [http-nio-9095-exec-2] c.e.a.d.m.UserMapper.getUserbyEmail      : <==      Total: 1
+2021-02-08 16:28:47.917 DEBUG 23248 --- [http-nio-9095-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-02-08 16:28:47.917 DEBUG 23248 --- [http-nio-9095-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.eatThat.application.model.Response@15b7bbbb]
+2021-02-08 16:28:47.919 DEBUG 23248 --- [http-nio-9095-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-02-08 16:28:47.919 DEBUG 23248 --- [http-nio-9095-exec-2] c.e.application.util.HttpLoggingFilter   : REST Request - [HTTP METHOD:POST] [PATH INFO:/account/verifyOtp] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"email": "danish935@yahoo.com","registrationOtp":"996014"}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1] [RESPONSE:{"status":"01","message":"Account activation fail. Please try again","ResponseData":null}]
+2021-02-08 16:28:47.995 DEBUG 23248 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2021-02-08 16:28:48.009 DEBUG 23248 --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ac13439
+2021-02-08 16:28:48.023 DEBUG 23248 --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3abdb6d8
+2021-02-08 16:28:48.038 DEBUG 23248 --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6bd3c14d
+2021-02-08 16:28:48.052 DEBUG 23248 --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34b0cf8f
+2021-02-08 16:28:48.067 DEBUG 23248 --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4bbc4066
+2021-02-08 16:28:48.081 DEBUG 23248 --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18cabd23
+2021-02-08 16:28:48.097 DEBUG 23248 --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f338470
+2021-02-08 16:28:48.110 DEBUG 23248 --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39e41fb2
+2021-02-08 16:28:48.123 DEBUG 23248 --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2663ddab
+2021-02-08 16:28:48.124 DEBUG 23248 --- [HikariPool-2 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 16:29:17.996 DEBUG 23248 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 16:29:17.996 DEBUG 23248 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Fill pool skipped, pool is at sufficient level.
+2021-02-08 16:29:36.013  INFO 23248 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-02-08 16:29:36.087  INFO 23248 --- [RMI TCP Connection(5)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-08 16:29:36.088  INFO 23248 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-02-08 16:29:36.088 DEBUG 23248 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2021-02-08 16:29:36.089 DEBUG 23248 --- [HikariPool-2 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6fa63ccd: (connection evicted)
+2021-02-08 16:29:36.089 DEBUG 23248 --- [HikariPool-2 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4ac13439: (connection evicted)
+2021-02-08 16:29:36.090 DEBUG 23248 --- [HikariPool-2 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3abdb6d8: (connection evicted)
+2021-02-08 16:29:36.091 DEBUG 23248 --- [HikariPool-2 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6bd3c14d: (connection evicted)
+2021-02-08 16:29:36.091 DEBUG 23248 --- [HikariPool-2 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@34b0cf8f: (connection evicted)
+2021-02-08 16:29:36.092 DEBUG 23248 --- [HikariPool-2 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4bbc4066: (connection evicted)
+2021-02-08 16:29:36.093 DEBUG 23248 --- [HikariPool-2 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@18cabd23: (connection evicted)
+2021-02-08 16:29:36.093 DEBUG 23248 --- [HikariPool-2 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5f338470: (connection evicted)
+2021-02-08 16:29:36.094 DEBUG 23248 --- [HikariPool-2 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@39e41fb2: (connection evicted)
+2021-02-08 16:29:36.094 DEBUG 23248 --- [HikariPool-2 connection closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2663ddab: (connection evicted)
+2021-02-08 16:29:36.095 DEBUG 23248 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2021-02-08 16:29:36.095  INFO 23248 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.

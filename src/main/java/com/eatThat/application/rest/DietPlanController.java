@@ -49,16 +49,18 @@ public class DietPlanController {
 	public Response<T> getCategories() {
 		
 		logger.debug("in categories");
+		Response<T> temp = new Response<T>();
+
 		ArrayList<FoodCategories> categories = (ArrayList<FoodCategories>) dietPlanService.getCategories();
 		
 		if (categories.size() > 0)
 		{
-			response.setCategories(categories);
-			response.setMessage("success");
-			response.setStatus("00");
+			temp.setCategories(categories);
+			temp.setMessage("success");
+			temp.setStatus("00");
 			
 		}
-		return response;
+		return temp;
 	}
 	
 	@RequestMapping(method = RequestMethod.GET, path = "/getDietPlans")
