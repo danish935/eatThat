@@ -26,11 +26,13 @@ public class DietPlanService {
 	public ArrayList<FoodItem> getAllItems(FoodItem foodItems) {
 		
 		if(foodItems.getCategoryId() != 0)
-		items = dietPlanDao.getAllItems(foodItems);
+		items = dietPlanDao.getAllItemsByDietPlanANDCategory(foodItems);
 		else if(foodItems.getSearchKey() != null)
 			items = dietPlanDao.getAllItemsBySearchKey(foodItems);
-		else
+		else if(foodItems.getDietPlanId() != 0)
 			items = dietPlanDao.getAllItemsByDietPlan(foodItems);	
+		else
+			items = dietPlanDao.getAllItems();	
 		for(int i = 0 ; i< items.size(); i++)
 		{
 			FoodItem item = items.get(i);

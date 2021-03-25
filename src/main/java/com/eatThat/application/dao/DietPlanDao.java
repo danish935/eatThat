@@ -23,8 +23,8 @@ public class DietPlanDao {
 	@Autowired
 	DietPlanMapper dietPlanMapper;
 
-	public ArrayList<FoodItem> getAllItems(FoodItem foodItems) {
-		return dietPlanMapper.getAllItems(foodItems);
+	public ArrayList<FoodItem> getAllItemsByDietPlanANDCategory(FoodItem foodItems) {
+		return dietPlanMapper.getAllItemsByDietPlanANDCategory(foodItems);
 	}
 
 	public List<NutritionInfo2> getNutritionInfo(int id, String name) {
@@ -69,6 +69,11 @@ public class DietPlanDao {
 
 	public ArrayList<FoodItem> getAllItemsBySearchKey(FoodItem foodItems) {
 		return dietPlanMapper.getAllItemsBySearchKey(foodItems);
+	}
+
+	public ArrayList<FoodItem> getAllItems() {
+		// TODO Auto-generated method stub
+		return dietPlanMapper.getAllItems();
 	}
 
 }
