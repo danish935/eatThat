@@ -24,7 +24,7 @@ public interface DietPlanMapper {
 			+ "on fi.category_id = cat.id\r\n"
 			+ "AND\r\n"
 			+ "fi.category_id=#{categoryId} AND dl.id =#{dietPlanId};")
-	public ArrayList<FoodItem> getAllItems(FoodItem foodItems);
+	public ArrayList<FoodItem> getAllItemsByDietPlanANDCategory(FoodItem foodItems);
 
 	@Select("select * from food_nutritions_info where food_items_id=#{id} OR name=#{name}")
 	public List<NutritionInfo2> getNutritionInfo(@Param(value = "id") int id, @Param(value = "name") String name);
@@ -70,4 +70,12 @@ public interface DietPlanMapper {
 			+ "AND\r\n"
 			+ "dl.id =#{dietPlanId} and fi.name LIKE '%' #{searchKey} '%';")
 	public ArrayList<FoodItem> getAllItemsBySearchKey(FoodItem foodItems);
+
+	
+	@Select ("select fi.*, dl.plan_name, cat.category_name from food_items fi \r\n"
+			+ "join diet_plans dl \r\n"
+			+ "on fi.diet_plan_id = dl.id\r\n"
+			+ "join diet_categories cat\r\n"
+			+ "on fi.category_id = cat.id;")
+	public ArrayList<FoodItem> getAllItems();
 }
